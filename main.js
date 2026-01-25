@@ -236,7 +236,7 @@ const locations = {
             id: 'supratours',
             name: 'Supratours Bus (Marrakech ⇄ Essaouira)',
             image: 'supratours_hero.png',
-            secondImage: 'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/32/bb/2f.jpg',
+            imageLabel: 'Supratour Station',
             rating: 5,
             duration: '~3 hours',
             price: { mad: '110–130 MAD', eur: '≈ 10–12 €' },
@@ -292,7 +292,11 @@ function createLocationCard(item, theme = 'terracotta') {
     return `
     <div class="glass-card location-card" data-id="${item.id}" data-aos="fade-up">
       <div class="card-image-gallery">
-        ${item.image ? `<div class="card-image"><img src="${item.image}" alt="${item.name}"></div>` : ''}
+        ${item.image ? `
+            <div class="card-image">
+                <img src="${item.image}" alt="${item.name}">
+                ${item.imageLabel ? `<div class="image-label">${item.imageLabel}</div>` : ''}
+            </div>` : ''}
         ${item.secondImage ? `<div class="card-image secondary-image"><img src="${item.secondImage}" alt="${item.name} View"></div>` : ''}
       </div>
       <div class="card-content">
