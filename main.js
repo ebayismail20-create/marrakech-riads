@@ -468,8 +468,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const refreshBtn = document.getElementById('refresh-btn');
     if (refreshBtn) {
         refreshBtn.onclick = () => {
-            // Force a reload from server, ignoring cache
-            window.location.reload(true);
+            // Force a true hard refresh by appending a timestamp to the URL
+            const currentUrl = new URL(window.location.href);
+            currentUrl.searchParams.set('t', new Date().getTime());
+            window.location.href = currentUrl.toString();
         };
     }
 });
