@@ -469,3 +469,128 @@ footer p:last-child {
     color: #FFD700;
     /* Gold */
 }
+
+/* Journey Transition Section */
+.journey-transition {
+    margin: 60px auto;
+    width: 100%;
+}
+
+.journey-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.journey-intro {
+    color: var(--text-muted);
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.journey-card-content {
+    margin: 0 auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.journey-card-image {
+    position: relative;
+    height: 240px;
+}
+
+.journey-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.journey-stats {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px 10px;
+    color: white;
+}
+
+.j-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.j-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.j-value {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.journey-contrast-container {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    gap: 16px;
+    background: white;
+}
+
+.contrast-item {
+    flex: 1;
+}
+
+.contrast-item h4 {
+    margin: 0 0 4px 0;
+    font-size: 1rem;
+}
+
+.contrast-item.marrakech h4 { color: var(--color-terracotta); }
+.contrast-item.essaouira h4 { color: var(--color-blue-moroccan); }
+
+.contrast-item p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+.contrast-arrow {
+    color: var(--text-muted);
+    opacity: 0.3;
+}
+
+.journey-info-box {
+    padding: 20px 24px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    background: rgba(0,0,0,0.02);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.journey-info-box p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-main);
+}
+
+@media (max-width: 500px) {
+    .journey-contrast-container {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+    .contrast-arrow {
+        transform: rotate(90deg);
+        padding: 5px 0;
+    }
+}
