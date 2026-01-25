@@ -235,7 +235,7 @@ const locations = {
         {
             id: 'supratours',
             name: 'Supratours Bus (Marrakech ⇄ Essaouira)',
-            image: 'supratours_hero.png',
+            image: 'supratours_station_left.png',
             imageLabel: 'Supratour Station',
             secondImage: 'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/32/bb/2f.jpg',
             rating: 5,
