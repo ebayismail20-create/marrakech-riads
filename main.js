@@ -182,6 +182,28 @@ const locations = {
             badge: 'Wellness'
         }
     ],
+    journey_transition: [
+        {
+            id: 'marrakech-to-essaouira',
+            name: 'Marrakech Train Station ⇄ Essaouira',
+            image: 'https://images.unsplash.com/photo-1548013146-72479768bbaa?q=80&w=2070&auto=format&fit=crop', // Beautiful Morocco landscape
+            distance: '175 - 185 km',
+            duration: '~3 hours (Bus) / 2.5 hours (Taxi)',
+            price: { mad: '110–130 MAD', eur: '≈ 10–12 €' },
+            info: 'The transformation from the Red City to the Blue Coast is magical.',
+            contrast: {
+                marrakech: {
+                    title: 'Marrakech: The Red City',
+                    description: 'Vibrant, Hectic, Ancient Walls, Desert Gold, Warm Energy.'
+                },
+                essaouira: {
+                    title: 'Essaouira: The Wind City',
+                    description: 'Relaxed, Ocean Breeze, Blue & White, Seagulls, Coastal Calm.'
+                }
+            },
+            badge: 'The Journey'
+        }
+    ],
     essaouira: [
         {
             id: 'essaouira-medina',
@@ -319,12 +341,53 @@ function createLocationCard(item, theme = 'terracotta') {
   `;
 }
 
+function createJourneyCard(item) {
+    return `
+    <div class="glass-card journey-card-content" data-aos="fade-up">
+        <div class="journey-card-image">
+            <img src="${item.image}" alt="Moroccan Landscape">
+            <div class="journey-stats">
+                <div class="j-stat">
+                    <span class="j-label">Distance</span>
+                    <span class="j-value">${item.distance}</span>
+                </div>
+                <div class="j-stat">
+                    <span class="j-label">Travel Time</span>
+                    <span class="j-value">${item.duration}</span>
+                </div>
+            </div>
+        </div>
+        <div class="journey-contrast-container">
+            <div class="contrast-item marrakech">
+                <h4>${item.contrast.marrakech.title}</h4>
+                <p>${item.contrast.marrakech.description}</p>
+            </div>
+            <div class="contrast-arrow">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4v3z"/></svg>
+            </div>
+            <div class="contrast-item essaouira">
+                <h4>${item.contrast.essaouira.title}</h4>
+                <p>${item.contrast.essaouira.description}</p>
+            </div>
+        </div>
+        <div class="journey-info-box">
+            <p><strong>Pro Tip:</strong> Look out for <strong>Argan Forests</strong> along the way—you might see goats climbing the trees!</p>
+            <a href="https://maps.google.com/?q=Marrakech+train+station+Supratours" target="_blank" class="map-link">
+                <svg fill="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Depart from Marrakech Train Station
+            </a>
+        </div>
+    </div>
+    `;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const containers = {
         'marrakech-medina-grid': locations.marrakech_medina,
         'marrakech-gardens-grid': locations.marrakech_gardens,
         'marrakech-adventure-grid': locations.marrakech_adventure,
         'marrakech-wellness-grid': locations.marrakech_wellness,
+        'journey-data-card': locations.journey_transition,
         'essaouira-grid': locations.essaouira,
         'transport-grid': locations.transport
     };
@@ -333,8 +396,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const container = document.getElementById(id);
         if (!container) return;
 
-        const theme = id.includes('essaouira') ? 'blue' : 'terracotta';
-        container.innerHTML = items.map(item => createLocationCard(item, theme)).join('');
+        const theme = id.includes('essaouira') ? 'blue' : (id.includes('journey') ? 'mixed' : 'terracotta');
+
+        if (id === 'journey-data-card') {
+            container.innerHTML = items.map(item => createJourneyCard(item)).join('');
+        } else {
+            container.innerHTML = items.map(item => createLocationCard(item, theme)).join('');
+        }
     });
 
     // Lightbox Logic - Handle click to enlarge
