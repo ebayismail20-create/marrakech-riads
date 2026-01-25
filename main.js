@@ -237,6 +237,7 @@ const locations = {
             name: 'Supratours Bus (Marrakech ⇄ Essaouira)',
             image: 'supratours_hero.png',
             imageLabel: 'Supratour Station',
+            secondImage: 'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/32/bb/2f.jpg',
             rating: 5,
             duration: '~3 hours',
             price: { mad: '110–130 MAD', eur: '≈ 10–12 €' },
