@@ -2,7 +2,7 @@ const locations = {
     marrakech_medina: [
         {
             id: 'jemaa-el-fna',
-            name: 'Jemaa el-Fna',
+            name: 'Center of Marrakech (City Center) – Jemaa el-Fna',
             image: 'https://www.lesjardinsdelamedina.com/blog/wp-content/uploads/2020/07/jama-el-fnaa.jpg',
             rating: 5,
             distance: '0 km',
