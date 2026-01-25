@@ -201,6 +201,7 @@ const locations = {
             price: { mad: 'Menu available', eur: 'Varies' },
             info: 'A stunning semi-gastronomic dining experience in the heart of Marrakech.',
             access: 'Rue Jbel Lakhdar, Marrakech 40000',
+            pickup: 'Take small taxi and say Safran, location Jbel Lakhdar',
             maps: 'https://maps.google.com/?q=Safran+Marrakech+Rue+Jbel+Lakhdar',
             bookingUrl: 'https://safranmarrakech.com/Menu-SafranbyKoya',
             instagram: 'https://www.instagram.com/safranmarrakechofficial/',
