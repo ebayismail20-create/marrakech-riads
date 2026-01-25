@@ -3,7 +3,7 @@ const locations = {
         {
             id: 'petit-taxi',
             name: 'Small Taxi (Petit Taxi)',
-            image: 'marrakech_hero.png',
+            image: 'petit_taxi_hero.png',
             rating: 5,
             price: { mad: '10–30 MAD', eur: '≈ 1–3 €' },
             info: 'The best way to get around Marrakech. Always ask for the meter (compteur).',
