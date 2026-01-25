@@ -29,7 +29,9 @@
     --glass-border: rgba(255, 255, 255, 0.3);
     --glass-blur: 12px;
 
-    --container-padding: 20px;
+    --container-padding: 16px;
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Outfit', sans-serif;
 }
 
 * {
@@ -40,11 +42,13 @@
 }
 
 body {
-    font-family: 'Outfit', sans-serif;
+    font-family: var(--font-body);
     background-color: var(--bg-main);
     color: var(--text-main);
-    line-height: 1.6;
+    line-height: 1.7;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
 }
 
 img {
@@ -99,16 +103,15 @@ section {
 }
 
 .section-title .subtitle {
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 0.85rem;
+    font-weight: 600;
     color: var(--text-muted);
     margin-left: 0;
     width: 100%;
     padding-left: 52px;
-    /* Align with text after the bar */
     display: block;
-    margin-top: -6px;
-    letter-spacing: 0.02em;
+    margin-top: -8px;
+    letter-spacing: 0.03em;
 }
 
 /* Glass Card */
@@ -196,15 +199,18 @@ section {
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin: 12px 0;
-    letter-spacing: -0.02em;
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+    margin: 16px 0;
+    letter-spacing: -0.03em;
+    font-weight: 800;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero p {
-    font-size: 1rem;
-    opacity: 0.9;
-    font-weight: 300;
+    font-size: clamp(0.9rem, 4vw, 1.1rem);
+    opacity: 0.95;
+    font-weight: 400;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .hero-stats {
@@ -356,7 +362,13 @@ section {
 .detail-row {
     display: flex;
     justify-content: space-between;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.05);
+    padding-bottom: 4px;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
 }
 
 .label {
@@ -511,7 +523,7 @@ footer p:last-child {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
     display: flex;
     justify-content: space-around;
     padding: 20px 10px 10px;
@@ -553,8 +565,13 @@ footer p:last-child {
     font-size: 1rem;
 }
 
-.contrast-item.marrakech h4 { color: var(--color-terracotta); }
-.contrast-item.essaouira h4 { color: var(--color-blue-moroccan); }
+.contrast-item.marrakech h4 {
+    color: var(--color-terracotta);
+}
+
+.contrast-item.essaouira h4 {
+    color: var(--color-blue-moroccan);
+}
 
 .contrast-item p {
     margin: 0;
@@ -570,8 +587,8 @@ footer p:last-child {
 
 .journey-info-box {
     padding: 20px 24px;
-    border-top: 1px solid rgba(0,0,0,0.05);
-    background: rgba(0,0,0,0.02);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.02);
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -589,6 +606,7 @@ footer p:last-child {
         gap: 12px;
         text-align: center;
     }
+
     .contrast-arrow {
         transform: rotate(90deg);
         padding: 5px 0;
