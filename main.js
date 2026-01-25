@@ -95,6 +95,7 @@ const locations = {
             rating: 5,
             price: { mad: '≈ 280 MAD', eur: 'From € 26' },
             info: 'Agafay desert quad, camel ride, and traditional fire show dinner.',
+            pickup: 'They will pick you up at your place (Hotel, Riad, or Apartment) and return you safely to your door so you don’t get lost! 😁',
             bookingUrl: 'https://www.airbnb.com/experiences/3482187',
             badge: 'Experience'
         },
@@ -138,6 +139,7 @@ const locations = {
                 { name: 'Airbnb Option 3', url: 'https://www.airbnb.com/experiences/3027465?checkin=2026-01-31&checkout=2026-02-06&location=Marrakesh%2C%20Morocco&currentTab=experience_tab&federatedSearchId=cb91f0fd-3941-4bec-8e46-f8950c2746a1&searchId=140bae36-d437-44bc-a19f-6d5aadb9a03c&sectionId=63f681a1-76d2-4215-bfae-bd37503047ed' },
                 { name: 'Airbnb Option 4', url: 'https://www.airbnb.com/experiences/3730176?checkin=2026-01-31&checkout=2026-02-06&location=Marrakesh%2C%20Morocco&currentTab=experience_tab&federatedSearchId=cb91f0fd-3941-4bec-8e46-f8950c2746a1&searchId=140bae36-d437-44bc-a19f-6d5aadb9a03c&sectionId=63f681a1-76d2-4215-bfae-bd37503047ed' }
             ],
+            pickup: 'Pickup from your Hotel, Riad, or Apartment is included. They will drop you back at your place or a close point! 😁',
             badge: 'Action'
         },
         {
@@ -151,6 +153,7 @@ const locations = {
             bookingOptions: [
                 { name: 'Airbnb Luxury Experience', url: 'https://www.airbnb.com/experiences/2981837?checkin=2026-01-31&checkout=2026-02-06&location=Marrakesh%2C%20Morocco&currentTab=experience_tab&federatedSearchId=6c533ba3-130b-4c0e-a8dc-8d1832755d0e&searchId=46b72e89-38c8-4b15-9ba3-432cd5f11707&sectionId=c9fc3559-fd1f-44e0-b384-5a91a8eec75e' }
             ],
+            pickup: 'Full pickup and drop-off service from your accommodation (Hotel/Riad/Appt) is included! 😁',
             badge: 'Luxury'
         },
         {
@@ -161,6 +164,7 @@ const locations = {
             distance: '',
             price: { mad: '140–250 MAD', eur: '≈ 13–23 €' },
             bestTime: '09:00 – 14:00',
+            pickup: 'Pickup service available from your Riad or Hotel in Marrakech! 😁',
             maps: 'https://maps.google.com/?q=Setti+Fatma+Ourika',
             badge: 'Waterfalls'
         }
@@ -264,6 +268,7 @@ function createLocationCard(item, theme = 'terracotta') {
           ${item.detail ? `<div class="detail-row" style="margin-top: 4px; font-style: italic; color: var(--color-terracotta)"><span class="label">ℹ Rate:</span> <span>${item.detail}</span></div>` : ''}
           ${item.warning ? `<div class="detail-row warning-text" style="margin-top: 8px; font-weight: 700; color: #d00;"><span class="label" style="color: #d00;">⚠️ Notice:</span> <span>${item.warning}</span></div>` : ''}
           ${item.access ? `<div class="detail-row" style="margin-top: 4px; color: var(--color-blue-moroccan); font-weight: 600;"><span class="label" style="color: var(--color-blue-moroccan)">🚶 Access:</span> <span>${item.access}</span></div>` : ''}
+          ${item.pickup ? `<div class="detail-row" style="margin-top: 8px; background: rgba(226, 114, 91, 0.05); padding: 8px; border-radius: 8px; border-left: 3px solid var(--color-terracotta);"><span class="label" style="color: var(--color-terracotta); font-weight: 700; white-space: nowrap; margin-right: 8px;">🚐 Pickup:</span> <span style="font-size: 0.85rem; font-weight: 500;">${item.pickup}</span></div>` : ''}
           <div class="detail-row"><span class="label">🕒 Info:</span> <span>${item.bestTime || ''} ${item.info || ''}</span></div>
         </div>
 
