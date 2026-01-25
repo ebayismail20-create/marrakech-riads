@@ -236,26 +236,26 @@ section {
     font-size: 1.1rem;
 }
 
-/* Location Card Styling */
 .location-grid {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
 }
 
 .location-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-left: 4px solid var(--color-terracotta);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+    border-left: 6px solid var(--color-terracotta);
     padding: 0;
     overflow: hidden;
+    background: var(--glass-bg);
 }
 
 .card-image-gallery {
     display: flex;
     width: 100%;
-    height: 200px;
-    /* Standard height */
+    height: clamp(180px, 25vh, 240px);
     overflow: hidden;
+    background: #f0f0f0;
 }
 
 .card-image-gallery .card-image {
@@ -264,7 +264,7 @@ section {
 }
 
 .secondary-image {
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 2px solid white;
 }
 
 .card-image img {
@@ -348,23 +348,26 @@ section {
 }
 
 .location-name {
-    font-size: 1.25rem;
-    margin-top: 8px;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    color: var(--color-dark);
+    letter-spacing: -0.01em;
 }
 
 .card-details {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin-bottom: 20px;
+    gap: 12px;
+    margin-bottom: 24px;
 }
 
 .detail-row {
     display: flex;
     justify-content: space-between;
-    font-size: 0.95rem;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.05);
-    padding-bottom: 4px;
+    font-size: 1rem;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+    padding-bottom: 6px;
+    color: var(--text-main);
 }
 
 .detail-row:last-child {
@@ -373,10 +376,11 @@ section {
 
 .label {
     color: var(--text-muted);
+    font-weight: 500;
 }
 
 .price-highlight {
-    font-weight: 700;
+    font-weight: 800;
     color: var(--color-terracotta);
 }
 
@@ -460,26 +464,26 @@ footer p:last-child {
 }
 
 .rating-label {
-    font-size: 0.8rem;
-    font-weight: 500;
+    font-size: 0.85rem;
+    font-weight: 600;
     color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .star-rating {
     display: flex;
-    gap: 4px;
+    gap: 6px;
 }
 
 .star {
-    color: #ddd;
-    font-size: 1.25rem;
-    transition: color 0.2s ease;
+    color: #e0e0e0;
+    font-size: 1.3rem;
 }
 
-.star.active,
 .star.selected {
     color: #FFD700;
-    /* Gold */
+    filter: drop-shadow(0 0 2px rgba(255, 215, 0, 0.4));
 }
 
 /* Journey Transition Section */
@@ -495,21 +499,22 @@ footer p:last-child {
 
 .journey-intro {
     color: var(--text-muted);
-    font-size: 1rem;
+    font-size: 1.1rem;
     max-width: 500px;
     margin: 0 auto;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .journey-card-content {
     margin: 0 auto;
     padding: 0 !important;
     overflow: hidden;
+    box-shadow: var(--shadow-lg);
 }
 
 .journey-card-image {
     position: relative;
-    height: 240px;
+    height: 300px;
 }
 
 .journey-card-image img {
@@ -561,8 +566,9 @@ footer p:last-child {
 }
 
 .contrast-item h4 {
-    margin: 0 0 4px 0;
-    font-size: 1rem;
+    margin: 0 0 6px 0;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 .contrast-item.marrakech h4 {
@@ -575,29 +581,30 @@ footer p:last-child {
 
 .contrast-item p {
     margin: 0;
-    font-size: 0.85rem;
+    font-size: 1rem;
     color: var(--text-muted);
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .contrast-arrow {
     color: var(--text-muted);
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
 .journey-info-box {
-    padding: 20px 24px;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
-    background: rgba(0, 0, 0, 0.02);
+    padding: 24px 32px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    background: #fdfdfd;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
 }
 
 .journey-info-box p {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--text-main);
+    line-height: 1.6;
 }
 
 @media (max-width: 500px) {
