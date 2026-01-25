@@ -165,7 +165,7 @@ const locations = {
             bestTime: '09:00 – 14:00',
             info: 'Visiting the waterfalls is free. For food, you can take what you want, but ALWAYS ask for a menu that has prices listed.',
             warning: 'Ask for a menu with prices before ordering food!',
-            access: 'To reach Setti Fatma, you can take a small taxi or walk if you are in the center. Just ask for “Taxi Setti Fatma” — anyone there can guide you, and people are always happy to help',
+            access: 'To reach Setti Fatma, you can take a small taxi or walk if you are staying in the center. Simply ask for “Taxi Setti Fatma”, and locals will be happy to guide you.<br><br>After visiting the area, having a meal, and resting, you can take a taxi back from the same place where you were dropped off. If you don’t remember the exact spot, just ask for “Taxi Marrakech”, and you will be directed easily.',
             maps: 'https://maps.google.com/?q=Setti+Fatma+Ourika',
             badge: 'Waterfalls'
         }
