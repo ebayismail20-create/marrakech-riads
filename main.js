@@ -163,7 +163,7 @@ const locations = {
             distance: '',
             price: { mad: '140–250 MAD', eur: '≈ 13–23 €' },
             bestTime: '09:00 – 14:00',
-            pickup: 'Pickup service available from your Riad or Hotel in Marrakech! 😁',
+            access: 'for Setti Fatma you can take small taxi or walk if you are in center and ask about "Taxi Setti Fatma" you can ask anyone there and they will guide you , just ask no one can not say no',
             maps: 'https://maps.google.com/?q=Setti+Fatma+Ourika',
             badge: 'Waterfalls'
         }
