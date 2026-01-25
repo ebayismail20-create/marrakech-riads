@@ -463,5 +463,14 @@ document.addEventListener('DOMContentLoaded', () => {
     lightbox.onclick = (e) => {
         if (e.target !== lightboxImg) closeLightbox();
     };
+
+    // Refresh Button Logic for easy content updates
+    const refreshBtn = document.getElementById('refresh-btn');
+    if (refreshBtn) {
+        refreshBtn.onclick = () => {
+            // Force a reload from server, ignoring cache
+            window.location.reload(true);
+        };
+    }
 });
 
