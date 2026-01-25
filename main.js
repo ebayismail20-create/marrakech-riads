@@ -161,8 +161,10 @@ const locations = {
             image: 'https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=center,quality=60,width=535,height=400,dpr=2/tour_img/a3dd66602214123ee08ff4804b0286a2bb90e459338bb276a645aef56a59b6c4.png',
             rating: 5,
             distance: '',
-            price: { mad: '140–250 MAD', eur: '≈ 13–23 €' },
+            price: { mad: 'Free', eur: 'Free' },
             bestTime: '09:00 – 14:00',
+            info: 'Visiting the waterfalls is free. For food, you can take what you want, but ALWAYS ask for a menu that has prices listed.',
+            warning: 'Ask for a menu with prices before ordering food!',
             access: 'To reach Setti Fatma, you can take a small taxi or walk if you are in the center. Just ask for “Taxi Setti Fatma” — anyone there can guide you, and people are always happy to help',
             maps: 'https://maps.google.com/?q=Setti+Fatma+Ourika',
             badge: 'Waterfalls'
