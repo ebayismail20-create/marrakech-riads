@@ -192,6 +192,23 @@ const locations = {
             badge: 'Wellness'
         }
     ],
+    marrakech_dining: [
+        {
+            id: 'safran-marrakech',
+            name: 'Safran Marrakech',
+            image: 'data:image/jpeg;base64,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',
+            rating: 5,
+            price: { mad: 'Menu available', eur: 'Varies' },
+            info: 'A stunning semi-gastronomic dining experience in the heart of Marrakech.',
+            access: 'Rue Jbel Lakhdar, Marrakech 40000',
+            maps: 'https://maps.google.com/?q=Safran+Marrakech+Rue+Jbel+Lakhdar',
+            bookingUrl: 'https://safranmarrakech.com/Menu-SafranbyKoya',
+            instagram: 'https://www.instagram.com/safranmarrakechofficial/',
+            email: 'commercial.koya@gmail.com',
+            phone: '+212 610 509902',
+            badge: 'Gastronomy'
+        }
+    ],
     journey_transition: [
         {
             id: 'marrakech-to-essaouira',
@@ -322,7 +339,25 @@ function createLocationCard(item, theme = 'terracotta') {
           ${item.bookingUrl ? `
           <a href="${item.bookingUrl}" target="_blank" class="booking-link">
             <svg fill="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M18 17H6v-2h12v2zm0-4H6v-2h12v2zm0-4H6V7h12v2zM3 22l1.5-1.5L6 22l1.5-1.5L9 22l1.5-1.5L12 22l1.5-1.5L15 22l1.5-1.5L18 22l1.5-1.5L21 22V2l-1.5 1.5L18 2l-1.5 1.5L15 2l-1.5 1.5L12 2l-1.5 1.5L9 2l-1.5 1.5L6 2l-1.5 1.5L3 2v20z"/></svg>
-            Book
+            Book / Menu
+          </a>
+          ` : ''}
+          ${item.instagram ? `
+          <a href="${item.instagram}" target="_blank" class="map-link" style="background: #E1306C; color: white; border: none;">
+            <svg fill="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagram
+          </a>
+          ` : ''}
+          ${item.phone ? `
+          <a href="tel:${item.phone}" class="map-link">
+            <svg fill="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            Call
+          </a>
+          ` : ''}
+          ${item.email ? `
+          <a href="mailto:${item.email}" class="map-link">
+            <svg fill="currentColor" viewBox="0 0 24 24" width="16" height="16"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Email
           </a>
           ` : ''}
           ${item.bookingOptions ? `
@@ -387,6 +422,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'marrakech-gardens-grid': locations.marrakech_gardens,
         'marrakech-adventure-grid': locations.marrakech_adventure,
         'marrakech-wellness-grid': locations.marrakech_wellness,
+        'marrakech-dining-grid': locations.marrakech_dining,
         'journey-data-card': locations.journey_transition,
         'journey-bus-grid': locations.journey_bus,
         'essaouira-grid': locations.essaouira
