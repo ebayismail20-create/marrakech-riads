@@ -20,6 +20,7 @@ const locations = {
             price: { mad: 'Free', eur: '(outside only)' },
             bestTime: '18:00 – sunset',
             info: 'Iconic 12th-century minaret, visible across the city.',
+            access: 'Walking from Jemaa el-Fna',
             maps: 'https://maps.google.com/?q=Koutoubia+Mosque+Marrakech',
             badge: 'Historic'
         },
@@ -31,6 +32,7 @@ const locations = {
             distance: '600 m from Jemaa el-Fna',
             price: { mad: '100 MAD', eur: '≈ 9 €' },
             bestTime: '08:30 – 10:00',
+            access: 'Walking from Jemaa el-Fna',
             maps: 'https://maps.google.com/?q=Le+Jardin+Secret+Marrakech',
             badge: 'Hidden Gem'
         },
@@ -42,6 +44,7 @@ const locations = {
             distance: '1.2 km from Jemaa el-Fna',
             price: { mad: '70 MAD', eur: '≈ 6.5 €' },
             bestTime: '09:00 – 11:00',
+            access: 'Walking from Jemaa el-Fna',
             maps: 'https://maps.google.com/?q=Bahia+Palace+Marrakech',
             badge: 'Palace'
         },
@@ -52,6 +55,7 @@ const locations = {
             distance: '900 m from Jemaa el-Fna',
             price: { mad: '50 MAD', eur: '≈ 4.5 €' },
             bestTime: '09:00 – 10:30',
+            access: 'Walking from Jemaa el-Fna',
             maps: 'https://maps.google.com/?q=Ben+Youssef+Madrasa',
             badge: 'Education'
         },
@@ -63,6 +67,7 @@ const locations = {
             distance: '',
             price: { mad: 'Free', eur: 'Free' },
             bestTime: '09:30 – 11:30 | 16:30 – 18:30',
+            access: 'Walking from City Center',
             maps: 'https://maps.google.com/?q=Marrakech+Souks',
             badge: 'Shopping'
         }
@@ -77,6 +82,7 @@ const locations = {
             price: { mad: '170 MAD', eur: '≈ 16 €' },
             bestTime: '08:30 – 09:45',
             info: 'Taking a Small Taxi is better (too far to walk).',
+            access: 'Small Taxi from City Center',
             maps: 'https://maps.google.com/?q=Jardin+Majorelle',
             warning: 'book online tickets mandatory before you go',
             bookingUrl: 'https://www.jardinmajorelle.com/en/',
@@ -100,6 +106,7 @@ const locations = {
             price: { mad: 'Free', eur: 'Free' },
             bestTime: '17:00 – sunset',
             info: 'Taking a Small Taxi is better (too far to walk).',
+            access: 'Small Taxi from City Center',
             maps: 'https://maps.google.com/?q=Menara+Gardens',
             badge: 'Quiet'
         },
@@ -111,6 +118,7 @@ const locations = {
             price: { mad: 'Free', eur: 'Free' },
             bestTime: '18:00 – 20:00',
             info: 'Taking a Small Taxi is better (too far to walk).',
+            access: 'Small Taxi from City Center',
             maps: 'https://maps.google.com/?q=Menara+Mall+Marrakech',
             badge: 'Modern'
         }
@@ -255,6 +263,7 @@ function createLocationCard(item, theme = 'terracotta') {
           <div class="detail-row"><span class="label">🎟 Price:</span> <span class="price-highlight">${item.price.mad} <small>(${item.price.eur})</small></span></div>
           ${item.detail ? `<div class="detail-row" style="margin-top: 4px; font-style: italic; color: var(--color-terracotta)"><span class="label">ℹ Rate:</span> <span>${item.detail}</span></div>` : ''}
           ${item.warning ? `<div class="detail-row warning-text" style="margin-top: 8px; font-weight: 700; color: #d00;"><span class="label" style="color: #d00;">⚠️ Notice:</span> <span>${item.warning}</span></div>` : ''}
+          ${item.access ? `<div class="detail-row" style="margin-top: 4px; color: var(--color-blue-moroccan); font-weight: 600;"><span class="label" style="color: var(--color-blue-moroccan)">🚶 Access:</span> <span>${item.access}</span></div>` : ''}
           <div class="detail-row"><span class="label">🕒 Info:</span> <span>${item.bestTime || ''} ${item.info || ''}</span></div>
         </div>
 
