@@ -1,5 +1,3 @@
-const BASE_URL = import.meta.env.BASE_URL;
-
 const locations = {
     marrakech_medina: [
         {
@@ -294,8 +292,8 @@ function createLocationCard(item, theme = 'terracotta') {
     return `
     <div class="glass-card location-card" data-id="${item.id}" data-aos="fade-up">
       <div class="card-image-gallery">
-        ${item.image ? `<div class="card-image"><img src="${item.image.startsWith('http') || item.image.startsWith('data:') ? item.image : BASE_URL + item.image}" alt="${item.name}"></div>` : ''}
-        ${item.secondImage ? `<div class="card-image secondary-image"><img src="${item.secondImage.startsWith('http') ? item.secondImage : BASE_URL + item.secondImage}" alt="${item.name} View"></div>` : ''}
+        ${item.image ? `<div class="card-image"><img src="${item.image}" alt="${item.name}"></div>` : ''}
+        ${item.secondImage ? `<div class="card-image secondary-image"><img src="${item.secondImage}" alt="${item.name} View"></div>` : ''}
       </div>
       <div class="card-content">
         <div class="card-header">
@@ -382,7 +380,7 @@ function createJourneyCard(item) {
     return `
     <div class="glass-card journey-card-content" data-aos="fade-up">
         <div class="journey-card-image">
-            <img src="${BASE_URL + item.image}" alt="Moroccan Landscape">
+            <img src="${item.image}" alt="Moroccan Landscape">
             <div class="journey-stats">
                 <div class="j-stat">
                     <span class="j-label">Distance</span>
