@@ -186,7 +186,7 @@ const locations = {
         {
             id: 'marrakech-to-essaouira',
             name: 'Marrakech Train Station ⇄ Essaouira',
-            image: 'https://images.unsplash.com/photo-1548013146-72479768bbaa?q=80&w=2070&auto=format&fit=crop', // Beautiful Morocco landscape
+            image: '/journey_hero.png', // Premium generated landscape
             distance: '175 - 185 km',
             duration: '~3 hours (Bus) / 2.5 hours (Taxi)',
             price: { mad: '110–130 MAD', eur: '≈ 10–12 €' },
