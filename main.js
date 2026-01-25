@@ -95,7 +95,7 @@ const locations = {
             rating: 5,
             price: { mad: '≈ 280 MAD', eur: 'From € 26' },
             info: 'Agafay desert quad, camel ride, and traditional fire show dinner.',
-            pickup: 'They will pick you up at your place (Hotel, Riad, or Apartment) and return you safely to your door so you don’t get lost! 😁',
+            access: 'they will pick up you at you place deos not matter if it is hotel or Riad or appartment , and also they will return you to close point to your place or even nutil the door if you think you will lost 😁',
             bookingUrl: 'https://www.airbnb.com/experiences/3482187',
             badge: 'Experience'
         },
@@ -137,9 +137,8 @@ const locations = {
                 { name: 'Airbnb Option 1', url: 'https://www.airbnb.com/experiences/1078874?checkin=2026-01-31&checkout=2026-02-06&location=Marrakesh%2C%20Morocco&currentTab=experience_tab&federatedSearchId=6c533ba3-130b-4c0e-a8dc-8d1832755d0e&searchId=46b72e89-38c8-4b15-9ba3-432cd5f11707&sectionId=c9fc3559-fd1f-44e0-b384-5a91a8eec75e' },
                 { name: 'Airbnb Option 2', url: 'https://www.airbnb.com/experiences/3428432?checkin=2026-01-31&checkout=2026-02-06&location=Marrakesh%2C%20Morocco&currentTab=experience_tab&federatedSearchId=cb91f0fd-3941-4bec-8e46-f8950c2746a1&searchId=140bae36-d437-44bc-a19f-6d5aadb9a03c&sectionId=63f681a1-76d2-4215-bfae-bd37503047ed' },
                 { name: 'Airbnb Option 3', url: 'https://www.airbnb.com/experiences/3027465?checkin=2026-01-31&checkout=2026-02-06&location=Marrakesh%2C%20Morocco&currentTab=experience_tab&federatedSearchId=cb91f0fd-3941-4bec-8e46-f8950c2746a1&searchId=140bae36-d437-44bc-a19f-6d5aadb9a03c&sectionId=63f681a1-76d2-4215-bfae-bd37503047ed' },
-                { name: 'Airbnb Option 4', url: 'https://www.airbnb.com/experiences/3730176?checkin=2026-01-31&checkout=2026-02-06&location=Marrakesh%2C%20Morocco&currentTab=experience_tab&federatedSearchId=cb91f0fd-3941-4bec-8e46-f8950c2746a1&searchId=140bae36-d437-44bc-a19f-6d5aadb9a03c&sectionId=63f681a1-76d2-4215-bfae-bd37503047ed' }
             ],
-            pickup: 'Pickup from your Hotel, Riad, or Apartment is included. They will drop you back at your place or a close point! 😁',
+            access: 'they will pick up you at you place deos not matter if it is hotel or Riad or appartment , and also they will return you to close point to your place or even nutil the door if you think you will lost 😁',
             badge: 'Action'
         },
         {
@@ -153,7 +152,7 @@ const locations = {
             bookingOptions: [
                 { name: 'Airbnb Luxury Experience', url: 'https://www.airbnb.com/experiences/2981837?checkin=2026-01-31&checkout=2026-02-06&location=Marrakesh%2C%20Morocco&currentTab=experience_tab&federatedSearchId=6c533ba3-130b-4c0e-a8dc-8d1832755d0e&searchId=46b72e89-38c8-4b15-9ba3-432cd5f11707&sectionId=c9fc3559-fd1f-44e0-b384-5a91a8eec75e' }
             ],
-            pickup: 'Full pickup and drop-off service from your accommodation (Hotel/Riad/Appt) is included! 😁',
+            access: 'they will pick up you at you place deos not matter if it is hotel or Riad or appartment , and also they will return you to close point to your place or even nutil the door if you think you will lost 😁',
             badge: 'Luxury'
         },
         {
