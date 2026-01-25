@@ -3,7 +3,7 @@ const locations = {
         {
             id: 'petit-taxi',
             name: 'Small Taxi (Petit Taxi)',
-            image: 'https://www.lespetitesexperiences.com/wp-content/uploads/2025/12/petit-taxi-Marrakech-1024x683.jpg',
+            image: 'marrakech_hero.png',
             rating: 5,
             price: { mad: '10–30 MAD', eur: '≈ 1–3 €' },
             info: 'The best way to get around Marrakech. Always ask for the meter (compteur).',
@@ -13,7 +13,7 @@ const locations = {
         {
             id: 'jemaa-el-fna',
             name: 'Center of Marrakech (City Center) – Jemaa el-Fna',
-            image: 'https://www.lesjardinsdelamedina.com/blog/wp-content/uploads/2020/07/jama-el-fnaa.jpg',
+            image: 'marrakech_hero.png',
             rating: 5,
             distance: '0 km',
             price: { mad: 'Free', eur: 'Free' },
@@ -24,7 +24,7 @@ const locations = {
         {
             id: 'koutoubia',
             name: 'Koutoubia Mosque',
-            image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Koutoubia%20Mosque%2CMarrakech%2CMorocco.jpg?width=1800',
+            image: 'koutoubia_hero.png',
             rating: 5,
             distance: '500 m from Jemaa el-Fna',
             price: { mad: 'Free', eur: '(outside only)' },
@@ -37,7 +37,7 @@ const locations = {
         {
             id: 'jardin-secret',
             name: 'Le Jardin Secret',
-            image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Morocco%20-%20Marrakech%20-%20Le%20Jardin%20Secret%20(49133982557).jpg?width=1800',
+            image: 'jardin_secret_hero.png',
             rating: 5,
             distance: '600 m from Jemaa el-Fna',
             price: { mad: '100 MAD', eur: '≈ 9 €' },
@@ -49,7 +49,7 @@ const locations = {
         {
             id: 'bahia-palace',
             name: 'Bahia Palace',
-            image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bahia%20Palace%202018%201.jpg?width=1800',
+            image: 'bahia_hero.png',
             rating: 5,
             distance: '1.2 km from Jemaa el-Fna',
             price: { mad: '70 MAD', eur: '≈ 6.5 €' },
@@ -61,7 +61,7 @@ const locations = {
         {
             id: 'ben-youssef',
             name: 'Ben Youssef Madrasa',
-            image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Marrakesh%20Ben%20Youssef%20Madrasa%20courtyard%202.jpg?width=1800',
+            image: 'ben_youssef_hero.png',
             distance: '900 m from Jemaa el-Fna',
             price: { mad: '50 MAD', eur: '≈ 4.5 €' },
             bestTime: '09:00 – 10:30',
@@ -72,7 +72,7 @@ const locations = {
         {
             id: 'souks',
             name: 'Souks of Marrakech',
-            image: 'https://media.tacdn.com/media/attractions-splice-spp-674x446/13/e4/fe/86.jpg',
+            image: 'souks_hero.png',
             rating: 5,
             distance: '',
             price: { mad: 'Free', eur: 'Free' },
@@ -86,7 +86,7 @@ const locations = {
         {
             id: 'majorelle',
             name: 'Jardin Majorelle',
-            image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Le%20jardin%20de%20majorelle%2002.JPG?width=1800',
+            image: 'jardin_hero.png',
             rating: 5,
             distance: '4 km from Jemaa el-Fna',
             price: { mad: '170 MAD', eur: '≈ 16 €' },
@@ -112,7 +112,7 @@ const locations = {
         {
             id: 'menara',
             name: 'Menara Gardens',
-            image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Pavillon%20Menaragärten.jpg?width=1800',
+            image: 'menara_gardens_hero.png',
             distance: '3.5 km from Jemaa el-Fna',
             price: { mad: 'Free', eur: 'Free' },
             bestTime: '17:00 – sunset',
@@ -124,7 +124,7 @@ const locations = {
         {
             id: 'menara-mall',
             name: 'Menara Mall',
-            image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Menara%20Mall.JPG?width=1800',
+            image: 'menara_mall_hero.png',
             distance: '4 km from Jemaa el-Fna',
             price: { mad: 'Free', eur: 'Free' },
             bestTime: '18:00 – 20:00',
@@ -138,7 +138,7 @@ const locations = {
         {
             id: 'quad-biking',
             name: 'Quad Biking – Palmeraie',
-            image: 'https://a0.muscache.com/im/pictures/Mt/MtTemplate-1078874/original/93df2af3-8a02-416e-92af-dbff97df7e9f.jpeg?im_w=720',
+            image: 'quad_hero.png',
             rating: 5,
             distance: '',
             price: { mad: '200–300 MAD', eur: '≈ 18–28 €' },
@@ -154,7 +154,7 @@ const locations = {
         {
             id: 'agafay',
             name: 'Agafay Desert',
-            image: 'https://www.pelago.com/img/products/MA-Morocco/agafay-desert-sunset-trip-with-dinner/9a77e129-287c-4a45-ab0f-f1212483421d_agafay-desert-sunset-trip-with-dinner-xlarge.webp',
+            image: 'agafay_hero.png',
             rating: 5,
             distance: '',
             price: { mad: '300–600 MAD', eur: '≈ 28–55 €' },
@@ -168,7 +168,7 @@ const locations = {
         {
             id: 'setti-fatma',
             name: 'Setti Fatma',
-            image: 'https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=center,quality=60,width=535,height=400,dpr=2/tour_img/a3dd66602214123ee08ff4804b0286a2bb90e459338bb276a645aef56a59b6c4.png',
+            image: 'setti_fatma_hero.png',
             rating: 5,
             distance: '',
             price: { mad: 'Free', eur: 'Free' },
@@ -218,7 +218,7 @@ const locations = {
         {
             id: 'supratours',
             name: 'Supratours Bus (Marrakech ⇄ Essaouira)',
-            image: 'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0d/e5/bd/40.jpg',
+            image: 'supratours_hero.png',
             secondImage: 'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/32/bb/2f.jpg',
             rating: 5,
             duration: '~3 hours',
@@ -238,7 +238,7 @@ const locations = {
         {
             id: 'essaouira-medina',
             name: 'Essaouira Medina',
-            image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Essaouira%20port%20remparts%201134.JPG?width=1800',
+            image: 'essaouira_hero.png',
             rating: 5,
             distance: '',
             price: { mad: 'Free', eur: 'Free' },
@@ -249,7 +249,7 @@ const locations = {
         {
             id: 'skala',
             name: 'Skala de la Ville',
-            image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Skala%20de%20Ville.jpg?width=1800',
+            image: 'skala_hero.png',
             rating: 5,
             distance: '',
             price: { mad: 'Free', eur: 'Free' },
@@ -260,7 +260,7 @@ const locations = {
         {
             id: 'essaouira-beach',
             name: 'Essaouira Beach',
-            image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Essaouira%20Beach%2C%20Morocco%20-%20panoramio%20(4).jpg?width=1800',
+            image: 'essaouira_beach_hero.png',
             rating: 5,
             distance: '',
             price: { mad: 'Free', eur: 'Free' },
