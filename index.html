@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marrakech & Essaouira – Complete Travel Guide</title>
+    <meta name="description"
+        content="Discover the magic of Morocco: A complete guide to Marrakech and Essaouira. Features, photos, maps, and prices.">
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS and other libraries can be added here if used before -->
+</head>
+
+<body>
+    <div id="app">
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-image-container">
+                <img src="/marrakech_hero.png" alt="Jemaa el-Fna at dusk" id="hero-img">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content container">
+                <div class="badge badge-terracotta">Morocco Guide</div>
+                <h1>Marrakech <br>& Essaouira</h1>
+                <p>Complete Travel Experience • Maps • Prices • Transport</p>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-label">Currency</span>
+                        <span class="stat-value">MAD / €</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Weather</span>
+                        <span class="stat-value">Sunny</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <!-- Marrakech Sections -->
+            <section id="marrakech">
+                <h2 class="section-title"><span></span> 🟠 MARRAKECH – MEDINA</h2>
+                <div class="location-grid" id="marrakech-medina-grid"></div>
+            </section>
+
+            <section id="gardens">
+                <h2 class="section-title"><span></span> 🌺 GARDENS & MODERN</h2>
+                <div class="location-grid" id="marrakech-gardens-grid"></div>
+            </section>
+
+            <section id="adventure">
+                <h2 class="section-title"><span></span> 🏜️ ADVENTURE & DAY TRIPS</h2>
+                <div class="location-grid" id="marrakech-adventure-grid"></div>
+            </section>
+
+            <section id="wellness">
+                <h2 class="section-title" style="color: #bc8f8f">
+                    <span style="background: #bc8f8f"></span> 💆 WELLNESS & HAMMAM
+                </h2>
+                <div class="location-grid" id="marrakech-wellness-grid"></div>
+            </section>
+
+            <!-- Essaouira Section -->
+            <section id="essaouira">
+                <h2 class="section-title" style="color: var(--color-blue-moroccan)">
+                    <span style="background: var(--color-blue-moroccan)"></span> 🌊 ESSAOUIRA
+                </h2>
+                <div class="location-grid" id="essaouira-grid"></div>
+            </section>
+
+            <!-- Transport Section -->
+            <section id="transport">
+                <h2 class="section-title">
+                    <span></span> 🚌 TRANSPORT
+                </h2>
+                <div id="transport-grid"></div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>© 2026 Tripuro Travel Guide</p>
+                <p>Curated for the ultimate Morocco experience</p>
+            </div>
+        </footer>
+    </div>
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
