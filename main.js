@@ -61,7 +61,7 @@ const locations = {
             price: { mad: '100 MAD', eur: '≈ 9 €' },
             bestTime: '08:00 – 10:00',
             info: 'Stunning interiors and courtyards',
-            access: 'Walk (20–25 min)<br>🚕 Taxi → “Bahia Palace”',
+            access: 'Walk (20–25 min)<br>🚕 Taxi → just say “Bahia Palace”',
             maps: 'https://maps.google.com/?q=Bahia+Palace+Marrakech',
             badge: 'Palace'
         },
