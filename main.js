@@ -12,7 +12,7 @@ const locations = {
         },
         {
             id: 'jemaa-el-fna',
-            name: '🕌 1️⃣ Jemaa el-Fna',
+            name: 'Jemaa el-Fna',
             image: 'https://www.onelifetrips.com/wp-content/uploads/2025/08/Jemaa-El-Fna-square-First-Time-Visitors-guide.jpg',
             rating: 5,
             price: { mad: 'Free', eur: 'Free' },
@@ -24,7 +24,7 @@ const locations = {
         },
         {
             id: 'koutoubia',
-            name: '🕌 6️⃣ Koutoubia Mosque',
+            name: 'Koutoubia Mosque',
             image: 'koutoubia_hero.png',
             rating: 5,
             price: { mad: 'Free', eur: '(outside visit)' },
@@ -36,7 +36,7 @@ const locations = {
         },
         {
             id: 'jardin-secret',
-            name: '🌿 2️⃣ Le Jardin Secret',
+            name: 'Le Jardin Secret',
             image: 'https://c02.purpledshub.com/uploads/sites/40/2019/12/38A0327-Edit_1-7d3ebfb.jpg',
             rating: 5,
             price: { mad: '100 MAD', eur: '≈ 9 €' },
@@ -48,7 +48,7 @@ const locations = {
         },
         {
             id: 'bahia-palace',
-            name: '🏛️ 4️⃣ Bahia Palace',
+            name: 'Bahia Palace',
             image: 'bahia_hero.png',
             rating: 5,
             price: { mad: '100 MAD', eur: '≈ 9 €' },
@@ -60,7 +60,7 @@ const locations = {
         },
         {
             id: 'ben-youssef',
-            name: '🏫 5️⃣ Ben Youssef Madrasa',
+            name: 'Ben Youssef Madrasa',
             image: 'ben_youssef_hero.png',
             price: { mad: '50 MAD', eur: '≈ 4.6 €' },
             bestTime: '09:00 – 10:30 or 16:30 – 18:00',
@@ -85,7 +85,7 @@ const locations = {
     marrakech_gardens: [
         {
             id: 'majorelle',
-            name: '🌸 3️⃣ Jardin Majorelle',
+            name: 'Jardin Majorelle',
             image: 'jardin_hero.png',
             rating: 5,
             price: { mad: '170 MAD', eur: '≈ 16 €' },
@@ -110,7 +110,7 @@ const locations = {
         },
         {
             id: 'menara',
-            name: '🌴 7️⃣ Menara Gardens',
+            name: 'Menara Gardens',
             image: 'menara_gardens_hero.png',
             price: { mad: 'Free', eur: 'Free' },
             bestTime: '16:30 – sunset',
@@ -121,7 +121,7 @@ const locations = {
         },
         {
             id: 'menara-mall',
-            name: '🛍️ 8️⃣ Menara Mall',
+            name: 'Menara Mall',
             image: 'menara_mall_hero.png',
             price: { mad: 'Free (entry)', eur: 'Free' },
             bestTime: '12:00 – 17:00',
@@ -134,7 +134,7 @@ const locations = {
     marrakech_adventure: [
         {
             id: 'quad-biking',
-            name: '🏍️ 10️⃣ Palmeraie (Quad/ATV)',
+            name: 'Palmeraie (Quad/ATV)',
             image: 'quad_hero.png',
             rating: 5,
             price: { mad: '200–300 MAD', eur: '≈ 18–28 €' },
@@ -150,7 +150,7 @@ const locations = {
         },
         {
             id: 'agafay',
-            name: '🏜️ 9️⃣ Agafay Desert',
+            name: 'Agafay Desert',
             image: 'https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcrop%2Cgravity%3Dcenter%2Cquality%3D60%2Cwidth%3D400%2Cheight%3D265%2Cdpr%3D2/tour_img/9357cbf8b766a86ba0f880ce662981e53aa888cbce78f3b4fc64cdb9f5a2efe0.jpg',
             rating: 5,
             price: { mad: '300–600 MAD', eur: '≈ 28–55 €' },
@@ -164,7 +164,7 @@ const locations = {
         },
         {
             id: 'setti-fatma',
-            name: '🏔️ 11️⃣ Setti Fatma',
+            name: 'Setti Fatma',
             image: 'https://cdn.getyourguide.com/img/tour/ec5b2edc18f45ef79405348b572b834e9e63d32217446645a14ab0192d28a308.jpg/68.jpg',
             rating: 5,
             price: { mad: 'Free access', eur: 'Guide: 30-50 MAD | Lunch: 60-100 MAD' },
