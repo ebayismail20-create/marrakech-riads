@@ -654,7 +654,7 @@ footer p:last-child {
 }
 
 .helpbar {
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 10000;
     backdrop-filter: blur(20px) saturate(200%);
