@@ -37,7 +37,7 @@ const locations = {
         {
             id: 'jardin-secret',
             name: 'Le Jardin Secret',
-            image: 'jardin_secret_hero.png',
+            image: 'https://c02.purpledshub.com/uploads/sites/40/2019/12/38A0327-Edit_1-7d3ebfb.jpg',
             rating: 5,
             distance: '600 m from Jemaa el-Fna',
             price: { mad: '100 MAD', eur: '≈ 9 €' },
