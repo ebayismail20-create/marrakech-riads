@@ -135,9 +135,9 @@ const locations = {
             image: 'menara_mall_hero.png',
             distance: '4 km from Jemaa el-Fna',
             price: { mad: 'Free (entry)', eur: 'Free' },
-            bestTime: '12:00 – 17:00',
+            bestTime: '18:00 – 20:00',
             info: 'Great lunch stop + shopping',
-            access: '🚕 Petit taxi → “Menara Mall” (it is too close to Menara by walking 2 min)',
+            access: '🚕 Petit taxi → “Menara Mall” (it is too close to "Menara Gardens"by walking 2 min)',
             maps: 'https://maps.google.com/?q=Menara+Mall+Marrakech',
             badge: 'Modern'
         }
