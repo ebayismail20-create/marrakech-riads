@@ -125,7 +125,7 @@ const locations = {
             price: { mad: 'Free', eur: 'Free' },
             bestTime: '16:30 – sunset',
             info: 'Pavilion & reflecting pool with Atlas Mountain backdrop',
-            access: '🚕 Petit taxi → “Menara Gardens”<br>🚌 Public transport also possible',
+            access: '🚕 Petit taxi → just say “Menara”',
             maps: 'https://maps.google.com/?q=Menara+Gardens',
             badge: 'Quiet'
         },
