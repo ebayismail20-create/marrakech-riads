@@ -18,11 +18,11 @@
           ${a.distance?`<div class="detail-row"><span class="label">📍 Distance:</span> <span>${a.distance}</span></div>`:""}
           ${a.duration?`<div class="detail-row"><span class="label">⏱ Duration:</span> <span>${a.duration}</span></div>`:""}
           <div class="detail-row"><span class="label">🎟 Price:</span> <span class="price-highlight">${a.price.mad} <small>(${a.price.eur})</small></span></div>
-          ${a.detail?`<div class="detail-row" style="margin-top: 4px; font-style: italic; color: var(--color-terracotta)"><span class="label">ℹ Rate:</span> <span>${a.detail}</span></div>`:""}
-          ${a.warning?`<div class="detail-row warning-text" style="margin-top: 8px; font-weight: 700; color: #d00;"><span class="label" style="color: #d00;">⚠️ Notice:</span> <span>${a.warning}</span></div>`:""}
-          ${a.access?`<div class="detail-row" style="margin-top: 4px; color: var(--color-blue-moroccan); font-weight: 600;"><span class="label" style="color: var(--color-blue-moroccan)">🚶 Access:</span> <span>${a.access}</span></div>`:""}
-          ${a.pickup?`<div class="detail-row" style="margin-top: 8px; background: rgba(226, 114, 91, 0.05); padding: 8px; border-radius: 8px; border-left: 3px solid var(--color-terracotta);"><span class="label" style="color: var(--color-terracotta); font-weight: 700; white-space: nowrap; margin-right: 8px;">🚐 Pickup:</span> <span style="font-size: 0.85rem; font-weight: 500;">${a.pickup}</span></div>`:""}
-          <div class="detail-row"><span class="label">🕒 Info:</span> <span>${a.bestTime||""} ${a.info||""}</span></div>
+          ${a.detail?`<div class="detail-row" style="flex-direction: column; align-items: flex-start; gap: 4px; margin-top: 4px; font-style: italic; color: var(--color-terracotta)"><span class="label">ℹ Rate:</span> <span>${a.detail}</span></div>`:""}
+          ${a.warning?`<div class="detail-row warning-text" style="flex-direction: column; align-items: flex-start; gap: 4px; margin-top: 8px; font-weight: 700; color: #d00;"><span class="label" style="color: #d00;">⚠️ Notice:</span> <span>${a.warning}</span></div>`:""}
+          ${a.access?`<div class="detail-row" style="flex-direction: column; align-items: flex-start; gap: 4px; margin-top: 4px; color: var(--color-blue-moroccan); font-weight: 600;"><span class="label" style="color: var(--color-blue-moroccan)">🚶 Access:</span> <span>${a.access}</span></div>`:""}
+          ${a.pickup?`<div class="detail-row" style="flex-direction: column; align-items: flex-start; gap: 4px; margin-top: 8px; background: rgba(226, 114, 91, 0.05); padding: 8px; border-radius: 8px; border-left: 3px solid var(--color-terracotta);"><span class="label" style="color: var(--color-terracotta); font-weight: 700;">🚐 Pickup:</span> <span style="font-size: 0.85rem; font-weight: 500;">${a.pickup}</span></div>`:""}
+          <div class="detail-row" style="flex-direction: column; align-items: flex-start; gap: 4px;"><span class="label">🕒 Info:</span> <span>${a.bestTime||""} ${a.info||""}</span></div>
         </div>
 
         ${a.rating?`
