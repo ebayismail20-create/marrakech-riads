@@ -190,7 +190,7 @@ const locations = {
         },
         {
             id: 'ouzoud-falls',
-            name: 'Ouzoud Falls',
+            name: '💦 Trip from Marrakech to Ouzoud Falls',
             image: 'https://upload.wikimedia.org/wikipedia/commons/3/36/Cascades_d%27Ouzoud.jpg',
             secondImage: 'https://inspiration.travelmindset.com/wp-content/uploads/2014/01/monkeys_over_waterfall-960x636.jpg',
             imageLabel: 'The Falls',
