@@ -100,7 +100,7 @@ const locations = {
             price: { mad: '170 MAD', eur: '≈ 16 €' },
             bestTime: '08:30 – 09:45 (before crowds)',
             info: 'Famous blue garden — book advance tickets',
-            access: '🚕 Petit taxi (10–15 min from Medina)<br>🚌 Local bus toward Gueliz (less direct)',
+            access: 'Petit taxi (10–15 min from Medina)',
             maps: 'https://maps.google.com/?q=Jardin+Majorelle',
             warning: 'book online tickets mandatory before you go',
             bookingUrl: 'https://www.jardinmajorelle.com/en/',
@@ -125,7 +125,7 @@ const locations = {
             price: { mad: 'Free', eur: 'Free' },
             bestTime: '16:30 – sunset',
             info: 'Pavilion & reflecting pool with Atlas Mountain backdrop',
-            access: '🚕 Petit taxi → “Menara Gardens”<br>🚌 Public transport also possible',
+            access: 'Petit taxi → “Menara Gardens”',
             maps: 'https://maps.google.com/?q=Menara+Gardens',
             badge: 'Quiet'
         },
@@ -157,7 +157,7 @@ const locations = {
                 { name: 'Airbnb Option 2', url: 'https://www.airbnb.com/experiences/3428432?checkin=2026-01-31&checkout=2026-02-06&location=Marrakesh%2C%20Morocco&currentTab=experience_tab&federatedSearchId=cb91f0fd-3941-4bec-8e46-f8950c2746a1&searchId=140bae36-d437-44bc-a19f-6d5aadb9a03c&sectionId=63f681a1-76d2-4215-bfae-bd37503047ed' },
                 { name: 'Airbnb Option 3', url: 'https://www.airbnb.com/experiences/3027465?checkin=2026-01-31&checkout=2026-02-06&location=Marrakesh%2C%20Morocco&currentTab=experience_tab&federatedSearchId=cb91f0fd-3941-4bec-8e46-f8950c2746a1&searchId=140bae36-d437-44bc-a19f-6d5aadb9a03c&sectionId=63f681a1-76d2-4215-bfae-bd37503047ed' },
             ],
-            access: '🚐 Tour pickup from hotel<br>🚕 Taxi → “Palmeraie Marrakech” + meet operator<br><br><strong>Note:</strong> they will pick up you at you place deos not matter if it is hotel or Riad or appartment , and also they will return you to close point to your place or even nutil the door if you think you will lost 😁',
+            access: 'Taxi / Private driver pickup from hotel<br><br><strong>Note:</strong> they will pick up you at you place deos not matter if it is hotel or Riad or appartment , and also they will return you to close point to your place or even nutil the door if you think you will lost 😁',
             badge: 'Action'
         },
         {
@@ -172,7 +172,7 @@ const locations = {
             bookingOptions: [
                 { name: 'Airbnb Luxury Experience', url: 'https://www.airbnb.com/experiences/2981837?checkin=2026-01-31&checkout=2026-02-06&location=Marrakesh%2C%20Morocco&currentTab=experience_tab&federatedSearchId=6c533ba3-130b-4c0e-a8dc-8d1832755d0e&searchId=46b72e89-38c8-4b15-9ba3-432cd5f11707&sectionId=c9fc3559-fd1f-44e0-b384-5a91a8eec75e' }
             ],
-            access: '🚐 Organized tour with hotel pickup (best)<br>🚗 Private driver (comfortable)<br><br><strong>Note:</strong> they will pick up you at you place deos not matter if it is hotel or Riad or appartment , and also they will return you to close point to your place or even nutil the door if you think you will lost 😁',
+            access: 'Private Taxi / Driver (comfortable)<br><br><strong>Note:</strong> they will pick up you at you place deos not matter if it is hotel or Riad or appartment , and also they will return you to close point to your place or even nutil the door if you think you will lost 😁',
             badge: 'Luxury'
         },
         {
@@ -184,7 +184,7 @@ const locations = {
             price: { mad: 'Free access', eur: 'Guide: 30-50 MAD | Lunch: 60-100 MAD' },
             bestTime: '09:00 – 14:00',
             info: 'Waterfall hikes & riverside cafés',
-            access: '🚐 Shared day tour (pickup from hotel)<br>🚗 Private taxi → “Setti Fatma – Ourika Valley”<br><br><strong>Note:</strong> To reach Setti Fatma, you can take a small taxi or walk if you are staying in the center. Simply ask for “Taxi Setti Fatma”, and locals will be happy to guide you.<br><br>After visiting the area, having a meal, and resting, you can take a taxi back from the same place where you were dropped off. If you don’t remember the exact spot, just ask for “Taxi Marrakech”, and you will be directed easily.',
+            access: 'Private taxi → “Setti Fatma – Ourika Valley”<br><br><strong>Note:</strong> To reach Setti Fatma, you can take a small taxi or walk if you are staying in the center. Simply ask for “Taxi Setti Fatma”, and locals will be happy to guide you.<br><br>After visiting the area, having a meal, and resting, you can take a taxi back from the same place where you were dropped off. If you don’t remember the exact spot, just ask for “Taxi Marrakech”, and you will be directed easily.',
             maps: 'https://maps.google.com/?q=Setti+Fatma+Ourika',
             badge: 'Waterfalls'
         },
@@ -225,8 +225,8 @@ const locations = {
             name: 'Marrakech Train Station ⇄ Essaouira',
             image: 'journey_hero.png', // Premium generated landscape
             distance: '175 - 185 km',
-            duration: '~3 hours (Bus) / 2.5 hours (Taxi)',
-            price: { mad: '110–130 MAD', eur: '≈ 10–12 €' },
+            duration: '2.5 hours (Private Taxi)',
+            price: { mad: '600–800 MAD', eur: '≈ 55–75 €' },
             info: 'The transformation from the Red City to the Blue Coast is magical.',
             contrast: {
                 marrakech: {
@@ -241,62 +241,42 @@ const locations = {
             badge: 'The Journey'
         }
     ],
-    journey_bus: [
-        {
-            id: 'supratours',
-            name: 'Supratours Bus (Marrakech ⇄ Essaouira)',
-            image: 'supratours_station_left.png',
-            imageLabel: 'Supratour Station',
-            secondImage: 'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/32/bb/2f.jpg',
-            rating: 5,
-            duration: '~3 hours',
-            price: { mad: '110–130 MAD', eur: '≈ 10–12 €' },
-            info: 'Recommended inter-city coach. Reliable and air-conditioned.',
-            detail: 'Inter-city coach service. Secure and comfortable.',
-            maps: 'https://maps.google.com/?q=Supratours+Bus+Station+Marrakech+ONCF+Train+Station',
-            extraMaps: {
-                name: 'Station View',
-                url: 'https://www.google.com/maps/place/Marrakech+train+station/@31.630626,-8.0171814,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgID9k6vwUQ!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAHVAwepkFGq-OKkwQHIaTFkticoBTi0BXm_JI3oVBXcTfnl9ny5m-8qq7x3LaxWLE9RaLF-EXh9xHSjvlIwDgRP6T-B-ubFWO3lbbiTSxZiGpoqojbiKkkos7n4H8QnCR6bEVeKU82Vr%3Dw114-h86-k-no!7i3638!8i2729!4m23!1m15!4m14!1m6!1m2!1s0xdad9a34a74568f1:0xa8ad91f08229dfff!2sSupratours,+Essaouira,+Morocco!2m2!1d-9.7667969!2d31.5106037!1m6!1m2!1s0xdafee93ae6f6489:0x3b48dfb186a12d75!2sMarrakech+train+station,+CENTRE%D8%8C+Bd+Mohamed+VI,+Marrakesh+40100,+Morocco!2m2!1d-8.0171274!2d31.6305546!3m6!1s0xdafee93ae6f6489:0x3b48dfb186a12d75!8m2!3d31.6305326!4d-8.017204!10e5!16s%2Fg%2F11ckr5ggqr?entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoASAFQAw%3D%3D#'
-            },
-            bookingUrl: 'https://www.supratours.ma/',
-            badge: 'Inter-City Bus'
-        }
     ],
-    essaouira: [
-        {
-            id: 'essaouira-medina',
-            name: 'Essaouira Medina',
-            image: 'essaouira_hero.png',
-            rating: 5,
-            distance: '',
-            price: { mad: 'Free', eur: 'Free' },
-            bestTime: '09:00 – 12:00',
-            maps: 'https://maps.google.com/?q=Essaouira+Medina',
-            badge: 'Coastal'
-        },
-        {
-            id: 'skala',
-            name: 'Skala de la Ville',
-            image: 'skala_hero.png',
-            rating: 5,
-            distance: '',
-            price: { mad: 'Free', eur: 'Free' },
-            bestTime: '17:00 – sunset',
-            maps: 'https://maps.google.com/?q=Skala+de+la+Ville+Essaouira',
-            badge: 'View'
-        },
-        {
-            id: 'essaouira-beach',
-            name: 'Essaouira Beach',
-            image: 'essaouira_beach_hero.png',
-            rating: 5,
-            distance: '',
-            price: { mad: 'Free', eur: 'Free' },
-            bestTime: '09:00–12:00 | 16:30–sunset',
-            maps: 'https://maps.google.com/?q=Essaouira+Beach',
-            badge: 'Relax'
-        }
-    ]
+essaouira: [
+    {
+        id: 'essaouira-medina',
+        name: 'Essaouira Medina',
+        image: 'essaouira_hero.png',
+        rating: 5,
+        distance: '',
+        price: { mad: 'Free', eur: 'Free' },
+        bestTime: '09:00 – 12:00',
+        maps: 'https://maps.google.com/?q=Essaouira+Medina',
+        badge: 'Coastal'
+    },
+    {
+        id: 'skala',
+        name: 'Skala de la Ville',
+        image: 'skala_hero.png',
+        rating: 5,
+        distance: '',
+        price: { mad: 'Free', eur: 'Free' },
+        bestTime: '17:00 – sunset',
+        maps: 'https://maps.google.com/?q=Skala+de+la+Ville+Essaouira',
+        badge: 'View'
+    },
+    {
+        id: 'essaouira-beach',
+        name: 'Essaouira Beach',
+        image: 'essaouira_beach_hero.png',
+        rating: 5,
+        distance: '',
+        price: { mad: 'Free', eur: 'Free' },
+        bestTime: '09:00–12:00 | 16:30–sunset',
+        maps: 'https://maps.google.com/?q=Essaouira+Beach',
+        badge: 'Relax'
+    }
+]
 };
 
 function createLocationCard(item, theme = 'terracotta') {
