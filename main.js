@@ -73,7 +73,7 @@ const locations = {
             price: { mad: '50 MAD', eur: '≈ 4.6 €' },
             bestTime: '09:00 – 10:30 or 16:30 – 18:00',
             info: 'Beautiful carved courtyard & architecture',
-            access: 'Walk through Medina<br>🚕 Taxi → “Ben Youssef Madrasa”',
+            access: 'Walk through Medina<br>🚕 Taxi → just say “Ben Youssef Madrasa”',
             maps: 'https://maps.google.com/?q=Ben+Youssef+Madrasa',
             badge: 'Education'
         },
