@@ -265,6 +265,16 @@ const locations = {
     ],
     essaouira: [
         {
+            id: 'essaouira-riad-trip',
+            name: 'Riad Trip to Essaouira',
+            image: 'https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?q=80&w=800', // Scenic road to coast
+            badge: 'Transport',
+            price: { mad: 'Option dependent', eur: 'From 25 €' },
+            info: 'Your riad can arrange round-trip transportation to and from Essaouira:',
+            access: '• 🚐 Shared group trip: 25 € per person (round trip)<br>• 🚗 Private trip: 100 – 150 € for 3 people or more (round trip)<br><br>✔️ Pickup and drop-off included<br>✔️ No price negotiation needed<br>✔️ Comfortable and reliable',
+            badge: 'Recommended'
+        },
+        {
             id: 'essaouira-medina',
             name: 'Essaouira Medina',
             image: 'essaouira_hero.png',
