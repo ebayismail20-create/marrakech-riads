@@ -2,12 +2,15 @@ const locations = {
     marrakech_medina: [
         {
             id: 'petit-taxi',
-            name: 'Small Taxi (Petit Taxi)',
+            name: 'Local Transport – Petit Taxi (Marrakech)',
             image: 'petit_taxi_hero.png',
             rating: 5,
             price: { mad: '10–30 MAD', eur: '≈ 1–3 €' },
-            info: 'The best way to get around Marrakech. Always ask for the meter (compteur).',
+            bestTime: 'Available all day and night',
+            info: 'Ideal for short trips between attractions. Petit taxis operate inside Marrakech only.',
             detail: 'Approx. 5–10 MAD per km. Minimum fare ~7 MAD.',
+            warning: 'Always ask the driver to use the meter (“compteur”). If the driver refuses, agree on the price before starting or take another taxi.',
+            pickup: '👉 Say: “Compteur, s’il vous plaît”',
             badge: 'Local Transport'
         },
         {
