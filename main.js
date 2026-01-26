@@ -13,7 +13,7 @@ const locations = {
         {
             id: 'jemaa-el-fna',
             name: 'Center of Marrakech (City Center) – Jemaa el-Fna',
-            image: 'marrakech_hero.png',
+            image: 'https://www.onelifetrips.com/wp-content/uploads/2025/08/Jemaa-El-Fna-square-First-Time-Visitors-guide.jpg',
             rating: 5,
             distance: '0 km',
             price: { mad: 'Free', eur: 'Free' },
@@ -154,7 +154,7 @@ const locations = {
         {
             id: 'agafay',
             name: 'Agafay Desert',
-            image: 'agafay_hero.png',
+            image: 'https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcrop%2Cgravity%3Dcenter%2Cquality%3D60%2Cwidth%3D400%2Cheight%3D265%2Cdpr%3D2/tour_img/9357cbf8b766a86ba0f880ce662981e53aa888cbce78f3b4fc64cdb9f5a2efe0.jpg',
             rating: 5,
             distance: '',
             price: { mad: '300–600 MAD', eur: '≈ 28–55 €' },
