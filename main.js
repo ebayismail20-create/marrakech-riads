@@ -19,7 +19,7 @@ const locations = {
             price: { mad: 'Free', eur: 'Free' },
             bestTime: '17:30 – 21:30 (evening vibe)',
             info: 'Best for street food, performers, sunset to night atmosphere',
-            access: '🚶 Walk from any riad in Medina<br>🚕 Taxi → “Jemaa el-Fna (main square)”',
+            access: 'Walk from any riad in Medina<br>🚕 Taxi → “Jemaa el-Fna (main square)”',
             maps: 'https://maps.google.com/?q=Jemaa+el-Fna',
             badge: 'Iconic Square'
         },
@@ -32,7 +32,7 @@ const locations = {
             price: { mad: 'Free', eur: '(outside visit)' },
             bestTime: '18:00 – sunset',
             info: 'Landmark mosque with lovely gardens (no interior visit for non-Muslims)',
-            access: '🚶 5–7 min walk from Jemaa el-Fna<br>🚕 Taxi → “Mosquée Koutoubia”',
+            access: '5–7 min walk from Jemaa el-Fna<br>🚕 Taxi → “Mosquée Koutoubia”',
             maps: 'https://maps.google.com/?q=Koutoubia+Mosque+Marrakech',
             badge: 'Historic'
         },
@@ -45,7 +45,7 @@ const locations = {
             price: { mad: '100 MAD', eur: '≈ 9 €' },
             bestTime: '08:30 – 10:00 (cool + quieter)',
             info: 'Peaceful gardens + rooftop views',
-            access: '🚶 7–10 min walk from Jemaa el-Fna through Medina<br>🚕 Taxi → “Rue Mouassine – Le Jardin Secret”',
+            access: '7–10 min walk from Jemaa el-Fna through Medina<br>🚕 Taxi → “Rue Mouassine – Le Jardin Secret”',
             maps: 'https://maps.google.com/?q=Le+Jardin+Secret+Marrakech',
             badge: 'Hidden Gem'
         },
@@ -58,7 +58,7 @@ const locations = {
             price: { mad: '100 MAD', eur: '≈ 9 €' },
             bestTime: '08:00 – 10:00',
             info: 'Stunning interiors and courtyards',
-            access: '🚶 Walk (20–25 min)<br>🚕 Taxi → “Bahia Palace”',
+            access: 'Walk (20–25 min)<br>🚕 Taxi → “Bahia Palace”',
             maps: 'https://maps.google.com/?q=Bahia+Palace+Marrakech',
             badge: 'Palace'
         },
@@ -70,7 +70,7 @@ const locations = {
             price: { mad: '50 MAD', eur: '≈ 4.6 €' },
             bestTime: '09:00 – 10:30 or 16:30 – 18:00',
             info: 'Beautiful carved courtyard & architecture',
-            access: '🚶 Walk through Medina<br>🚕 Taxi → “Ben Youssef Madrasa”',
+            access: 'Walk through Medina<br>🚕 Taxi → “Ben Youssef Madrasa”',
             maps: 'https://maps.google.com/?q=Ben+Youssef+Madrasa',
             badge: 'Education'
         },
@@ -319,7 +319,7 @@ function createLocationCard(item, theme = 'terracotta') {
           <div class="detail-row"><span class="label">🎟 Price:</span> <span class="price-highlight">${item.price.mad} <small>(${item.price.eur})</small></span></div>
           ${item.detail ? `<div class="detail-row" style="flex-direction: column; align-items: flex-start; gap: 4px; margin-top: 4px; font-style: italic; color: var(--color-terracotta)"><span class="label">ℹ Rate:</span> <span>${item.detail}</span></div>` : ''}
           ${item.warning ? `<div class="detail-row warning-text" style="flex-direction: column; align-items: flex-start; gap: 4px; margin-top: 8px; font-weight: 700; color: #d00;"><span class="label" style="color: #d00;">⚠️ Notice:</span> <span>${item.warning}</span></div>` : ''}
-          ${item.access ? `<div class="detail-row" style="flex-direction: column; align-items: flex-start; gap: 4px; margin-top: 4px; color: var(--color-blue-moroccan); font-weight: 600;"><span class="label" style="color: var(--color-blue-moroccan)">🚶 Access:</span> <span>${item.access}</span></div>` : ''}
+          ${item.access ? `<div class="detail-row" style="flex-direction: column; align-items: flex-start; gap: 4px; margin-top: 4px; color: var(--color-blue-moroccan); font-weight: 600;"><span class="label" style="color: var(--color-terracotta); font-weight: 800; font-size: 0.85rem; text-transform: uppercase;">Access:</span> <span>${item.access}</span></div>` : ''}
           ${item.pickup ? `<div class="detail-row" style="flex-direction: column; align-items: flex-start; gap: 4px; margin-top: 8px; background: rgba(226, 114, 91, 0.05); padding: 8px; border-radius: 8px; border-left: 3px solid var(--color-terracotta);"><span class="label" style="color: var(--color-terracotta); font-weight: 700;">🚐 Pickup:</span> <span style="font-size: 0.85rem; font-weight: 500;">${item.pickup}</span></div>` : ''}
           <div class="detail-row" style="flex-direction: column; align-items: flex-start; gap: 4px;"><span class="label">🕒 Info:</span> <span>${item.bestTime || ''} ${item.info || ''}</span></div>
         </div>
