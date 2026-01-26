@@ -172,7 +172,7 @@ const locations = {
             bookingOptions: [
                 { name: 'Airbnb Luxury Experience', url: 'https://www.airbnb.com/experiences/2981837?checkin=2026-01-31&checkout=2026-02-06&location=Marrakesh%2C%20Morocco&currentTab=experience_tab&federatedSearchId=6c533ba3-130b-4c0e-a8dc-8d1832755d0e&searchId=46b72e89-38c8-4b15-9ba3-432cd5f11707&sectionId=c9fc3559-fd1f-44e0-b384-5a91a8eec75e' }
             ],
-            access: '🚐 Organized tour with hotel pickup (best)<br>🚗 Private driver (comfortable)<br><br><strong>Note:</strong> they will pick up you at you place deos not matter if it is hotel or Riad or appartment , and also they will return you to close point to your place or even nutil the door if you think you will lost 😁',
+            access: '🚐 Tour pickup from hotel<br><br><strong>Note:</strong> they will pick up you at you place deos not matter if it is hotel or Riad or appartment , and also they will return you to close point to your place or even nutil the door if you think you will lost 😁',
             badge: 'Luxury'
         },
         {
