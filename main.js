@@ -180,11 +180,11 @@ const locations = {
             name: 'Setti Fatma',
             image: 'https://cdn.getyourguide.com/img/tour/ec5b2edc18f45ef79405348b572b834e9e63d32217446645a14ab0192d28a308.jpg/68.jpg',
             rating: 5,
-            distance: '≈ 65 km from Jemaa el-Fna',
+            distance: '~60 km from Jemaa el-Fna',
             price: { mad: 'Free access', eur: 'Guide: 30-50 MAD | Lunch: 60-100 MAD' },
             bestTime: '09:00 – 14:00',
             info: 'Waterfall hikes & riverside cafés',
-            access: '🚐 Shared day tour (pickup from hotel)<br>🚗 Private taxi → “Setti Fatma – Ourika Valley”<br><br><strong>Note:</strong> To reach Setti Fatma, you can take a small taxi or walk if you are staying in the center. Simply ask for “Taxi Setti Fatma”, and locals will be happy to guide you.<br><br>After visiting the area, having a meal, and resting, you can take a taxi back from the same place where you were dropped off. If you don’t remember the exact spot, just ask for “Taxi Marrakech”, and you will be directed easily.',
+            access: '� Distance & Time<br>From Jemaa el-Fna: ~60 km<br>Travel time: 1 – 1h15 (traffic dependent)<br><br>🎟 Taxi Price (Foreigners)<br>One way: 300 – 400 MAD (≈ 28 – 37 €)<br><br><strong>Note:</strong> To reach Setti Fatma, you can take a small taxi or walk if you are staying in the center. Simply ask for “Taxi Setti Fatma”, and locals will be happy to guide you.<br><br>After visiting the area, having a meal, and resting, you can take a taxi back from the same place where you were dropped off. If you don’t remember the exact spot, just ask for “Taxi Marrakech”, and you will be directed easily.',
             maps: 'https://maps.google.com/?q=Setti+Fatma+Ourika',
             badge: 'Waterfalls'
         },
