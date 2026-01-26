@@ -100,7 +100,7 @@ const locations = {
             price: { mad: '170 MAD', eur: '≈ 16 €' },
             bestTime: '08:30 – 09:45 (before crowds)',
             info: 'Famous blue garden — book advance tickets',
-            access: '🚕 Petit taxi (10–15 min from Medina)<br>🚌 Local bus toward Gueliz (less direct)',
+            access: '🚕 Petit taxi (10–15 min from Medina)',
             maps: 'https://maps.google.com/?q=Jardin+Majorelle',
             warning: 'book online tickets mandatory before you go',
             bookingUrl: 'https://www.jardinmajorelle.com/en/',
