@@ -191,7 +191,10 @@ const locations = {
         {
             id: 'ouzoud-falls',
             name: 'Ouzoud Falls',
-            image: 'https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcrop%2Cgravity%3Dcenter%2Cquality%3D65%2Cwidth%3D600%2Cheight%3D400%2Cdpr%3D2/tour_img/47545806c9e992cc869680ed2574929849206bbfce7c3f3b4fc64cdb9f5a2efe0.jpg',
+            image: 'https://upload.wikimedia.org/wikipedia/commons/3/36/Cascades_d%27Ouzoud.jpg',
+            secondImage: 'https://inspiration.travelmindset.com/wp-content/uploads/2014/01/monkeys_over_waterfall-960x636.jpg',
+            imageLabel: 'The Falls',
+            secondImageLabel: 'Wild Monkeys',
             rating: 5,
             distance: '~150 km from Jemaa el-Fna',
             price: { mad: 'Free access', eur: 'Entry is Free' },
