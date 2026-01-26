@@ -137,7 +137,7 @@ const locations = {
             price: { mad: 'Free (entry)', eur: 'Free' },
             bestTime: '12:00 – 17:00',
             info: 'Great lunch stop + shopping',
-            access: '🚕 Petit taxi → “Menara Mall”',
+            access: '🚕 Petit taxi → “Menara Mall” (it is too close to Menara by walking 2 min)',
             maps: 'https://maps.google.com/?q=Menara+Mall+Marrakech',
             badge: 'Modern'
         }
