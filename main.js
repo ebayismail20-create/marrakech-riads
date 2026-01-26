@@ -168,7 +168,7 @@ const locations = {
         {
             id: 'setti-fatma',
             name: 'Setti Fatma',
-            image: 'setti_fatma_hero.png',
+            image: 'https://cdn.getyourguide.com/img/tour/ec5b2edc18f45ef79405348b572b834e9e63d32217446645a14ab0192d28a308.jpg/68.jpg',
             rating: 5,
             distance: '',
             price: { mad: 'Free', eur: 'Free' },
