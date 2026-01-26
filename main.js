@@ -22,7 +22,7 @@ const locations = {
             price: { mad: 'Free', eur: 'Free' },
             bestTime: '17:30 – 21:30 (evening vibe)',
             info: 'Best for street food, performers, sunset to night atmosphere',
-            access: 'Walk from any riad in Medina<br>🚕 Taxi → “Jemaa el-Fna (main square)”',
+            access: 'Walk from any riad in Medina<br>🚕 Taxi → just say “Jemaa el-Fna”',
             maps: 'https://maps.google.com/?q=Jemaa+el-Fna',
             badge: 'Iconic Square'
         },
