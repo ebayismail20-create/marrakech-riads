@@ -48,7 +48,7 @@ const locations = {
             price: { mad: '100 MAD', eur: '≈ 9 €' },
             bestTime: '08:30 – 10:00 (cool + quieter)',
             info: 'Peaceful gardens + rooftop views',
-            access: '7–10 min walk from Jemaa el-Fna through Medina<br>🚕 Taxi → “Rue Mouassine – Le Jardin Secret”',
+            access: '7–10 min walk from Jemaa el-Fna through Medina<br>🚕 Taxi → just say “Jardin Secret” and then when the taxi drop you, ask anyone there they will guide you the right spot',
             maps: 'https://maps.google.com/?q=Le+Jardin+Secret+Marrakech',
             badge: 'Hidden Gem'
         },
