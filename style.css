@@ -801,3 +801,10 @@ footer p:last-child {
         border-radius: 16px;
     }
 }
+@media (max-width: 600px) {
+    /* Ensure Green WhatsApp on Mobile */
+    .helpbar-btn.whatsapp {
+        background: linear-gradient(135deg, #25D366, #128C7E) !important;
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4) !important;
+    }
+}
