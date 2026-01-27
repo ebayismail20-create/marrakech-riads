@@ -332,10 +332,10 @@ function createLocationCard(item, theme = 'terracotta') {
       <div class="card-image-gallery">
         ${item.image ? `
             <div class="card-image">
-                <img src="${item.image}" alt="${item.name}">
+                <img src="${item.image}" alt="${item.name}" loading="lazy">
                 ${item.imageLabel ? `<div class="image-label">${item.imageLabel}</div>` : ''}
             </div>` : ''}
-        ${item.secondImage ? `<div class="card-image secondary-image"><img src="${item.secondImage}" alt="${item.name} View"></div>` : ''}
+        ${item.secondImage ? `<div class="card-image secondary-image"><img src="${item.secondImage}" alt="${item.name} View" loading="lazy"></div>` : ''}
       </div>
       <div class="card-content">
         <div class="card-header">
@@ -422,7 +422,7 @@ function createJourneyCard(item) {
     return `
     <div class="glass-card journey-card-content" data-aos="fade-up">
         <div class="journey-card-image">
-            <img src="${item.image}" alt="Moroccan Landscape">
+            <img src="${item.image}" alt="Moroccan Landscape" loading="lazy">
             <div class="journey-stats">
                 <div class="j-stat">
                     <span class="j-label">Distance</span>

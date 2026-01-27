@@ -3,10 +3,10 @@
       <div class="card-image-gallery">
         ${e.image?`
             <div class="card-image">
-                <img src="${e.image}" alt="${e.name}">
+                <img src="${e.image}" alt="${e.name}" loading="lazy">
                 ${e.imageLabel?`<div class="image-label">${e.imageLabel}</div>`:""}
             </div>`:""}
-        ${e.secondImage?`<div class="card-image secondary-image"><img src="${e.secondImage}" alt="${e.name} View"></div>`:""}
+        ${e.secondImage?`<div class="card-image secondary-image"><img src="${e.secondImage}" alt="${e.name} View" loading="lazy"></div>`:""}
       </div>
       <div class="card-content">
         <div class="card-header">
@@ -89,7 +89,7 @@
   `}function p(e){return`
     <div class="glass-card journey-card-content" data-aos="fade-up">
         <div class="journey-card-image">
-            <img src="${e.image}" alt="Moroccan Landscape">
+            <img src="${e.image}" alt="Moroccan Landscape" loading="lazy">
             <div class="journey-stats">
                 <div class="j-stat">
                     <span class="j-label">Distance</span>
