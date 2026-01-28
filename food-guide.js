@@ -192,3 +192,10 @@ function handleFoodGuideRouting() {
         if (app && hash !== '#food-guide') app.style.display = 'block';
     }
 }
+
+// Initialize Food Guide when page loads
+document.addEventListener('DOMContentLoaded', () => {
+    populateFoodGuide();
+    handleFoodGuideRouting();
+    window.addEventListener('hashchange', handleFoodGuideRouting);
+});
