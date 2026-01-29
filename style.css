@@ -1313,20 +1313,20 @@ footer p:last-child {
     margin: 0 auto;
     padding: 0 16px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .helpbar-link {
-    background: var(--color-terracotta);
+    background: #22c55e;
     color: white;
-    padding: 8px 18px;
+    padding: 10px 24px;
     border-radius: 50px;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     font-weight: 700;
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
-    box-shadow: 0 4px 15px rgba(226, 114, 91, 0.4);
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
     align-items: center;
@@ -1335,8 +1335,8 @@ footer p:last-child {
 
 .helpbar-link:hover {
     transform: translateY(-2px);
-    background: #e9826d;
-    box-shadow: 0 8px 20px rgba(226, 114, 91, 0.5);
+    background: #16a34a;
+    box-shadow: 0 8px 20px rgba(34, 197, 94, 0.5);
 }
 
 /* Hero CTA Button */
