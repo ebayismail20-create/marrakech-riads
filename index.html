@@ -532,18 +532,30 @@
 
     <script>
         function handleFGRoute() {
-            const h = location.hash, s = document.getElementById('food-guide-section'), a = document.getElementById('app');
+            console.log("FGS Debug: Hash changed to", location.hash);
+            const h = location.hash;
+            const s = document.getElementById('food-guide-section');
+            const a = document.getElementById('app');
+
             if (h === '#food-guide') {
-                if (s) s.style.display = 'block';
+                console.log("FGS Debug: Showing Food Guide");
+                if (s) {
+                    s.style.display = 'block';
+                    s.style.visibility = 'visible';
+                    s.style.opacity = '1';
+                }
                 if (a) a.style.display = 'none';
-                scrollTo(0, 0);
+                window.scrollTo(0, 0);
             } else {
+                console.log("FGS Debug: Showing Main App");
                 if (s) s.style.display = 'none';
                 if (a) a.style.display = 'block';
             }
         }
-        addEventListener('hashchange', handleFGRoute);
-        addEventListener('DOMContentLoaded', handleFGRoute);
+        window.addEventListener('hashchange', handleFGRoute);
+        window.addEventListener('load', handleFGRoute);
+        // Initial check
+        handleFGRoute();
     </script>
 
 </body>
