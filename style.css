@@ -1499,3 +1499,41 @@ footer p:last-child {
         padding: 0;
     }
 }
+
+/* --- New Minimal Food Guide Header --- */
+.fg-minimal-hero {
+    text-align: center;
+    padding: 100px 20px 60px;
+    position: relative;
+    background: radial-gradient(circle at center, rgba(34, 197, 94, 0.08), transparent 70%);
+}
+
+.fg-main-title {
+    font-size: clamp(3.5rem, 12vw, 5.5rem) !important;
+    font-weight: 900 !important;
+    line-height: 0.9 !important;
+    letter-spacing: -0.05em !important;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffffff 0%, #22c55e 50%, #15803d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+    animation: titleFloat 3s ease-in-out infinite alternate;
+}
+
+@keyframes titleFloat {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
+@media (max-width: 600px) {
+    .fg-minimal-hero {
+        padding: 80px 16px 40px;
+    }
+    .fg-main-title {
+        font-size: clamp(2.5rem, 15vw, 4rem) !important;
+    }
+}
