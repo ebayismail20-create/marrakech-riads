@@ -217,37 +217,6 @@ const locations = {
             badge: 'Wellness'
         }
     ],
-    marrakech_dining: [
-        {
-            id: 'food-guide-link',
-            name: 'Morocco Food & Drinks Guide',
-            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Moroccan_TAGINE.JPG/800px-Moroccan_TAGINE.JPG',
-            rating: 5,
-            price: { mad: 'Budget to Luxury', eur: 'Full Price Guide' },
-            bestTime: 'Essential Morocco Experience',
-            info: 'A complete guide to traditional Moroccan food, drinks, and prices.',
-            access: 'Click below to open the full interactive food guide.',
-            bookingUrl: '#food-guide',
-            badge: 'FULL GUIDE'
-        },
-        {
-            id: 'safran-marrakech',
-            name: 'Safran Marrakech',
-            image: 'safran_marrakech.png',
-            rating: 5,
-            price: { mad: 'Menu available', eur: 'Varies' },
-            bestTime: '19:00 – 22:00',
-            info: 'A stunning semi-gastronomic dining experience in the heart of Marrakech.',
-            warning: 'book in advance ( just give the name no need to pay until you get there)',
-            access: 'Take small taxi and say Safran, location Jbel Lakhdar',
-            maps: 'https://www.google.com/maps/dir//Safran+by+K%C3%B4ya,+Rue+Jbel+Lakhdar,+Marrakech+40000,+Morocco/@31.627881,-7.9971819,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0xdafef1242d5792d:0xeba15c878581297e!2m2!1d-7.9946!2d31.6275908!3e1?entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoASAFQAw%3D%3D',
-            bookingUrl: 'https://safranmarrakech.com/Menu-SafranbyKoya',
-            instagram: 'https://www.instagram.com/safranmarrakechofficial/',
-            email: 'commercial.koya@gmail.com',
-            phone: '+212 610 509902',
-            badge: 'Gastronomy'
-        }
-    ],
     journey_transition: [
         {
             id: 'marrakech-to-essaouira',
@@ -469,7 +438,6 @@ document.addEventListener('DOMContentLoaded', () => {
         'marrakech-gardens-grid': locations.marrakech_gardens,
         'marrakech-adventure-grid': locations.marrakech_adventure,
         'marrakech-wellness-grid': locations.marrakech_wellness,
-        'marrakech-dining-grid': locations.marrakech_dining,
         'journey-data-card': locations.journey_transition,
         'journey-bus-grid': locations.journey_bus,
         'essaouira-grid': locations.essaouira
