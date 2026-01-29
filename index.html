@@ -8,8 +8,8 @@
     <meta name="description"
         content="Discover the magic of Morocco: A complete guide to Marrakech and Essaouira. Features, photos, maps, and prices.">
     <!-- AOS and other libraries can be added here if used before -->
-  <script type="module" crossorigin src="/marrakech-riads/assets/index-pMDRbpU6.js"></script>
-  <link rel="stylesheet" crossorigin href="/marrakech-riads/assets/index-D3hKYSMR.css">
+  <script type="module" crossorigin src="/marrakech-riads/assets/index-oUKFzdcz.js"></script>
+  <link rel="stylesheet" crossorigin href="/marrakech-riads/assets/index-CseoUR03.css">
 </head>
 
 <body>
@@ -117,10 +117,9 @@
         </button>
     </div> <!-- Closing #app here -->
 
-    <!-- Food Guide Section (New Static Design) -->
     <div id="food-guide-section" class="food-guide-section">
-        <div class="container">
-            <header class="hero">
+        <div class="container fg-container">
+            <header class="hero fg-hero">
                 <div class="h-title">
                     <div class="badge">🍴 Morocco Guide • Marrakech + Essaouira</div>
                     <div class="badge">💶 Prices in € included</div>
@@ -130,9 +129,10 @@
                     Tap “Open Maps” to navigate. Photos load automatically (online). This page is designed to be shared
                     with friends.
                 </p>
-                <div class="footer" style="margin-top: 10px; opacity: 0.8;">
-                    Note: Images from Wikimedia Commons. Refresh if they don't load.
-                </div>
+                <p class="footer">
+                    Note: Images are embedded from Wikimedia Commons (Creative Commons / free media). If an image
+                    doesn’t load, refresh the page or open it with internet connection.
+                </p>
                 <a href="#home" class="back-btn">
                     <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -143,9 +143,9 @@
                 </a>
             </header>
 
-            <main class="grid">
-                <!-- Tagine -->
-                <article class="card" id="tagine">
+            <main class="grid fg-grid">
+
+                <article class="card fg-card" id="tagine">
                     <div class="card-inner">
                         <div class="kicker">
                             <h2 class="title">🥘 Tagine (Chicken / Beef / Lamb / Veg)</h2>
@@ -156,46 +156,51 @@
                         </div>
                         <p class="desc">Slow‑cooked Moroccan stew with spices, meat and vegetables — usually served
                             bubbling hot in a clay pot.</p>
+
                         <div class="section">
                             <div class="label">Price (typical)</div>
-                            <div class="price-box">
-                                <div class="price-tag"><strong>40–80 MAD</strong> (≈ 4–7 €) <br><small>Street /
-                                        Local</small></div>
-                                <div class="price-tag"><strong>90–120 MAD</strong> (≈ 8–11 €) <br><small>Nicer
-                                        restaurant</small></div>
-                            </div>
+                            <p class="price">• 40–80 MAD (≈ 4–7 €) street/local
+                                • 90–120 MAD (≈ 8–11 €) nicer restaurant</p>
                         </div>
+
                         <div class="section">
                             <div class="label">Recommended places</div>
                             <div class="places">
+
                                 <div class="place">
                                     <span>Nomad – Marrakech</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Nomad+Marrakech"
-                                        target="_blank" rel="noopener">📍 Maps</a>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Nomad+Marrakech"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
                                 </div>
+
                                 <div class="place">
                                     <span>Dar Yacout – Marrakech</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Dar+Yacout+Marrakech"
-                                        target="_blank" rel="noopener">📍 Maps</a>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Dar+Yacout+Marrakech"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
+
                         <div class="section">
                             <div class="label">Photos</div>
                             <div class="media">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Moroccan_TAGINE.JPG"
-                                    alt="Tagine 1" loading="lazy">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Moroccan_food_tagine.jpg"
-                                    alt="Tagine 2" loading="lazy">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Moroccan_TAGINE.JPG/800px-Moroccan_TAGINE.JPG"
+                                    alt="🥘 Tagine (Chicken / Beef / Lamb / Veg) photo 1" loading="lazy" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Moroccan_food_tagine.jpg/800px-Moroccan_food_tagine.jpg"
+                                    alt="🥘 Tagine (Chicken / Beef / Lamb / Veg) photo 2" loading="lazy" />
                             </div>
                         </div>
                     </div>
                 </article>
 
-                <!-- Couscous -->
-                <article class="card" id="couscous">
+                <article class="card fg-card" id="couscous">
                     <div class="card-inner">
                         <div class="kicker">
                             <h2 class="title">🍛 Couscous (Best on Friday)</h2>
@@ -206,43 +211,50 @@
                         </div>
                         <p class="desc">Steamed semolina topped with vegetables and meat — a classic Moroccan Friday
                             lunch tradition.</p>
+
                         <div class="section">
                             <div class="label">Price (typical)</div>
-                            <div class="price-box">
-                                <div class="price-tag"><strong>60–100 MAD</strong> (≈ 6–9 €)</div>
-                            </div>
+                            <p class="price">• 60–100 MAD (≈ 6–9 €)</p>
                         </div>
+
                         <div class="section">
                             <div class="label">Recommended places</div>
                             <div class="places">
+
                                 <div class="place">
                                     <span>Al Fassia – Marrakech</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Al+Fassia+Marrakech"
-                                        target="_blank" rel="noopener">📍 Maps</a>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Al+Fassia+Marrakech"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
                                 </div>
+
                                 <div class="place">
-                                    <span>Local riad lunch</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Riad+Medina+Marrakech"
-                                        target="_blank" rel="noopener">📍 Maps</a>
+                                    <span>Local riad lunch (ask your riad)</span>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Riad+Medina+Marrakech"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
+
                         <div class="section">
                             <div class="label">Photos</div>
                             <div class="media">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Couscous%20007.jpg"
-                                    alt="Couscous 1" loading="lazy">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Couscous%20aux%20l%C3%A9gumes.jpg"
-                                    alt="Couscous 2" loading="lazy">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Couscous_007.jpg/800px-Couscous_007.jpg"
+                                    alt="🍛 Couscous (Best on Friday) photo 1" loading="lazy" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Couscous_aux_l%C3%A9gumes.jpg/800px-Couscous_aux_l%C3%A9gumes.jpg"
+                                    alt="🍛 Couscous (Best on Friday) photo 2" loading="lazy" />
                             </div>
                         </div>
                     </div>
                 </article>
 
-                <!-- Pastilla -->
-                <article class="card" id="pastilla">
+                <article class="card fg-card" id="pastilla">
                     <div class="card-inner">
                         <div class="kicker">
                             <h2 class="title">🥧 Pastilla (Chicken or Seafood)</h2>
@@ -251,45 +263,52 @@
                                 <span class="pill">Prices in MAD & €</span>
                             </div>
                         </div>
-                        <p class="desc">Sweet & savory layered pie (almonds + cinnamon) — one of the most ‘special
+                        <p class="desc">Sweet &amp; savory layered pie (almonds + cinnamon) — one of the most ‘special
                             occasion’ Moroccan dishes.</p>
+
                         <div class="section">
                             <div class="label">Price (typical)</div>
-                            <div class="price-box">
-                                <div class="price-tag"><strong>80–140 MAD</strong> (≈ 7–13 €)</div>
-                            </div>
+                            <p class="price">• 80–140 MAD (≈ 7–13 €)</p>
                         </div>
+
                         <div class="section">
                             <div class="label">Recommended places</div>
                             <div class="places">
+
                                 <div class="place">
                                     <span>Dar Moha – Marrakech</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Dar+Moha+Marrakech"
-                                        target="_blank" rel="noopener">📍 Maps</a>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Dar+Moha+Marrakech"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
                                 </div>
+
                                 <div class="place">
                                     <span>La Table by Madada – Essaouira</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=La+Table+by+Madada+Essaouira"
-                                        target="_blank" rel="noopener">📍 Maps</a>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=La+Table+by+Madada+Essaouira"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
+
                         <div class="section">
                             <div class="label">Photos</div>
                             <div class="media">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pastilla.jpg"
-                                    alt="Pastilla 1" loading="lazy">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pastilla_Seafood.jpg"
-                                    alt="Pastilla 2" loading="lazy">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Pastilla.jpg/800px-Pastilla.jpg"
+                                    alt="🥧 Pastilla (Chicken or Seafood) photo 1" loading="lazy" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Pastilla_Seafood.jpg/800px-Pastilla_Seafood.jpg"
+                                    alt="🥧 Pastilla (Chicken or Seafood) photo 2" loading="lazy" />
                             </div>
                         </div>
                     </div>
                 </article>
 
-                <!-- Harira -->
-                <article class="card" id="harira">
+                <article class="card fg-card" id="harira">
                     <div class="card-inner">
                         <div class="kicker">
                             <h2 class="title">🍲 Harira Soup</h2>
@@ -300,46 +319,53 @@
                         </div>
                         <p class="desc">Traditional tomato‑based soup with lentils and chickpeas — comforting and very
                             Moroccan.</p>
+
                         <div class="section">
                             <div class="label">Price (typical)</div>
-                            <div class="price-box">
-                                <div class="price-tag"><strong>5–15 MAD</strong> (≈ 0.5–1.5 €)</div>
-                            </div>
+                            <p class="price">• 5–15 MAD (≈ 0.5–1.5 €)</p>
                         </div>
+
                         <div class="section">
                             <div class="label">Recommended places</div>
                             <div class="places">
+
                                 <div class="place">
                                     <span>Jemaa el‑Fna food stalls</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Jemaa+el+Fna+food+stalls"
-                                        target="_blank" rel="noopener">📍 Maps</a>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Jemaa+el+Fna+food+stalls"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
                                 </div>
+
                                 <div class="place">
-                                    <span>Local cafés / Medina</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Cafe+Medina+Marrakech"
-                                        target="_blank" rel="noopener">📍 Maps</a>
+                                    <span>Local cafés in the Medina</span>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Cafe+Medina+Marrakech"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
+
                         <div class="section">
                             <div class="label">Photos</div>
                             <div class="media">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Harira.JPG" alt="Harira 1"
-                                    loading="lazy">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sopera%20de%20la%20Harira.jpg"
-                                    alt="Harira 2" loading="lazy">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Harira.JPG/800px-Harira.JPG"
+                                    alt="🍲 Harira Soup photo 1" loading="lazy" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Sopera_de_la_Harira.jpg/800px-Sopera_de_la_Harira.jpg"
+                                    alt="🍲 Harira Soup photo 2" loading="lazy" />
                             </div>
                         </div>
                     </div>
                 </article>
 
-                <!-- Msemen -->
-                <article class="card" id="msemen">
+                <article class="card fg-card" id="msemen">
                     <div class="card-inner">
                         <div class="kicker">
-                            <h2 class="title">🫓 Msemen (Flatbread)</h2>
+                            <h2 class="title">🫓 Msemen (Moroccan Flatbread)</h2>
                             <div class="pills">
                                 <span class="pill">Photos ×2</span>
                                 <span class="pill">Prices in MAD & €</span>
@@ -347,43 +373,211 @@
                         </div>
                         <p class="desc">Flaky layered pan‑fried bread — amazing with honey, cheese, or as a savory
                             sandwich base.</p>
+
                         <div class="section">
                             <div class="label">Price (typical)</div>
-                            <div class="price-box">
-                                <div class="price-tag"><strong>2–5 MAD</strong> (≈ 0.2–0.5 €)</div>
-                            </div>
+                            <p class="price">• 2–5 MAD (≈ 0.2–0.5 €)</p>
                         </div>
+
                         <div class="section">
                             <div class="label">Recommended places</div>
                             <div class="places">
+
                                 <div class="place">
-                                    <span>Street stalls near souks</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Msemen+street+stall+Marrakech"
-                                        target="_blank" rel="noopener">📍 Maps</a>
+                                    <span>Street stalls near the souks</span>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Msemen+street+stall+Marrakech"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
                                 </div>
+
                                 <div class="place">
-                                    <span>Breakfast cafés / Medina</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Breakfast+cafe+Medina+Marrakech"
-                                        target="_blank" rel="noopener">📍 Maps</a>
+                                    <span>Breakfast cafés in the Medina</span>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Breakfast+cafe+Medina+Marrakech"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
+
                         <div class="section">
                             <div class="label">Photos</div>
                             <div class="media">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Msemmem.jpg"
-                                    alt="Msemen 1" loading="lazy">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Msemen.jpg" alt="Msemen 2"
-                                    loading="lazy">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Msemmem.jpg/800px-Msemmem.jpg"
+                                    alt="🫓 Msemen (Moroccan Flatbread) photo 1" loading="lazy" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Msemen.jpg/800px-Msemen.jpg"
+                                    alt="🫓 Msemen (Moroccan Flatbread) photo 2" loading="lazy" />
                             </div>
                         </div>
                     </div>
                 </article>
 
-                <!-- Grilled Fish -->
-                <article class="card" id="fish">
+                <article class="card fg-card" id="harcha">
+                    <div class="card-inner">
+                        <div class="kicker">
+                            <h2 class="title">🫓 Harcha (Semolina Bread)</h2>
+                            <div class="pills">
+                                <span class="pill">Photos ×2</span>
+                                <span class="pill">Prices in MAD & €</span>
+                            </div>
+                        </div>
+                        <p class="desc">Semolina ‘pan bread’ — soft inside, slightly crispy outside. Great at breakfast
+                            with honey or cheese.</p>
+
+                        <div class="section">
+                            <div class="label">Price (typical)</div>
+                            <p class="price">• 5–15 MAD (≈ 0.5–1.5 €)</p>
+                        </div>
+
+                        <div class="section">
+                            <div class="label">Recommended places</div>
+                            <div class="places">
+
+                                <div class="place">
+                                    <span>Traditional bakeries in Medina</span>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Bakery+Medina+Marrakech"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
+                                </div>
+
+                                <div class="place">
+                                    <span>Local breakfast cafés</span>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Breakfast+cafe+Gueliz+Marrakech"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="label">Photos</div>
+                            <div class="media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Harcha_%28Homemade%29.jpg/800px-Harcha_%28Homemade%29.jpg"
+                                    alt="🫓 Harcha (Semolina Bread) photo 1" loading="lazy" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Ary-7ercha.JPG/800px-Ary-7ercha.JPG"
+                                    alt="🫓 Harcha (Semolina Bread) photo 2" loading="lazy" />
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card fg-card" id="sandwich">
+                    <div class="card-inner">
+                        <div class="kicker">
+                            <h2 class="title">🥪 Moroccan Sandwich (Street Food)</h2>
+                            <div class="pills">
+                                <span class="pill">Photos ×2</span>
+                                <span class="pill">Prices in MAD & €</span>
+                            </div>
+                        </div>
+                        <p class="desc">Fresh bread stuffed with chicken, kefta, tuna, or veggies — fast, tasty, and
+                            everywhere in the Medina.</p>
+
+                        <div class="section">
+                            <div class="label">Price (typical)</div>
+                            <p class="price">• 15–30 MAD (≈ 1.5–3 €)</p>
+                        </div>
+
+                        <div class="section">
+                            <div class="label">Recommended places</div>
+                            <div class="places">
+
+                                <div class="place">
+                                    <span>Near Jemaa el‑Fna</span>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Jemaa+el+Fna+street+food"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
+                                </div>
+
+                                <div class="place">
+                                    <span>Snack shops inside Medina</span>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Snack+shop+Medina+Marrakech"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="label">Photos</div>
+                            <div class="media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Moroccan_kefta_sandwich.jpg/800px-Moroccan_kefta_sandwich.jpg"
+                                    alt="🥪 Moroccan Sandwich (Street Food) photo 1" loading="lazy" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Kefta_meatballs.jpg/800px-Kefta_meatballs.jpg"
+                                    alt="🥪 Moroccan Sandwich (Street Food) photo 2" loading="lazy" />
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card fg-card" id="sfenj">
+                    <div class="card-inner">
+                        <div class="kicker">
+                            <h2 class="title">🍩 Sfenj (Moroccan Donut)</h2>
+                            <div class="pills">
+                                <span class="pill">Photos ×2</span>
+                                <span class="pill">Prices in MAD & €</span>
+                            </div>
+                        </div>
+                        <p class="desc">Light, airy fried donut — best eaten fresh in the morning with mint tea.</p>
+
+                        <div class="section">
+                            <div class="label">Price (typical)</div>
+                            <p class="price">• 1–2 MAD (≈ 0.1–0.2 €)</p>
+                        </div>
+
+                        <div class="section">
+                            <div class="label">Recommended places</div>
+                            <div class="places">
+
+                                <div class="place">
+                                    <span>Medina street stalls</span>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Sfenj+street+stall+Marrakech"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
+                                </div>
+
+                                <div class="place">
+                                    <span>Near local markets</span>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Market+Medina+Marrakech"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="section">
+                            <div class="label">Photos</div>
+                            <div class="media">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Sfenj_in_Marrakesh_Morocco.jpg/800px-Sfenj_in_Marrakesh_Morocco.jpg"
+                                    alt="🍩 Sfenj (Moroccan Donut) photo 1" loading="lazy" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Sfenj_in_Essaouira_Morocco.jpg/800px-Sfenj_in_Essaouira_Morocco.jpg"
+                                    alt="🍩 Sfenj (Moroccan Donut) photo 2" loading="lazy" />
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card fg-card" id="fish">
                     <div class="card-inner">
                         <div class="kicker">
                             <h2 class="title">🐟 Grilled Fish (Essaouira)</h2>
@@ -394,43 +588,50 @@
                         </div>
                         <p class="desc">Fresh seafood (especially sardines) grilled right by the port — simple, smoky,
                             perfect with lemon.</p>
+
                         <div class="section">
                             <div class="label">Price (typical)</div>
-                            <div class="price-box">
-                                <div class="price-tag"><strong>60–120 MAD</strong> (≈ 6–11 €)</div>
-                            </div>
+                            <p class="price">• 60–120 MAD (≈ 6–11 €)</p>
                         </div>
+
                         <div class="section">
                             <div class="label">Recommended places</div>
                             <div class="places">
+
                                 <div class="place">
-                                    <span>Essaouira Fish Market</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Essaouira+Fish+Market"
-                                        target="_blank" rel="noopener">📍 Maps</a>
+                                    <span>Essaouira Fish Market (Port grills)</span>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Essaouira+Fish+Market"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
                                 </div>
+
                                 <div class="place">
                                     <span>Chez Sam – Essaouira</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Chez+Sam+Essaouira"
-                                        target="_blank" rel="noopener">📍 Maps</a>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Chez+Sam+Essaouira"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
+
                         <div class="section">
                             <div class="label">Photos</div>
                             <div class="media">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Grilled%20sardines%20in%20Morocco.jpg"
-                                    alt="Fish 1" loading="lazy">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Grilled%20sardines%20with%20onions.jpg"
-                                    alt="Fish 2" loading="lazy">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Grilled_sardines_in_Morocco.jpg/800px-Grilled_sardines_in_Morocco.jpg"
+                                    alt="🐟 Grilled Fish (Essaouira) photo 1" loading="lazy" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Grilled_sardines_with_onions.jpg/800px-Grilled_sardines_with_onions.jpg"
+                                    alt="🐟 Grilled Fish (Essaouira) photo 2" loading="lazy" />
                             </div>
                         </div>
                     </div>
                 </article>
 
-                <!-- Mint Tea -->
-                <article class="card" id="tea">
+                <article class="card fg-card" id="tea">
                     <div class="card-inner">
                         <div class="kicker">
                             <h2 class="title">🍵 Moroccan Mint Tea</h2>
@@ -439,231 +640,105 @@
                                 <span class="pill">Prices in MAD & €</span>
                             </div>
                         </div>
-                        <p class="desc">Sweet mint tea — Morocco’s national drink. Iconic experience on any rooftop.</p>
+                        <p class="desc">Sweet mint tea — Morocco’s national drink. Order it on any rooftop and enjoy the
+                            view.</p>
+
                         <div class="section">
                             <div class="label">Price (typical)</div>
-                            <div class="price-box">
-                                <div class="price-tag"><strong>5–15 MAD</strong> (≈ 0.5–1.5 €)</div>
-                            </div>
+                            <p class="price">• 5–15 MAD (≈ 0.5–1.5 €)</p>
                         </div>
+
                         <div class="section">
                             <div class="label">Recommended places</div>
                             <div class="places">
+
                                 <div class="place">
                                     <span>Any café in Medina</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Cafe+in+Medina+Marrakech"
-                                        target="_blank" rel="noopener">📍 Maps</a>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Cafe+in+Medina+Marrakech"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
                                 </div>
+
                                 <div class="place">
-                                    <span>Rooftop cafés</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Rooftop+cafe+Marrakech+Medina"
-                                        target="_blank" rel="noopener">📍 Maps</a>
+                                    <span>Rooftop cafés with views</span>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Rooftop+cafe+Marrakech+Medina"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
+
                         <div class="section">
                             <div class="label">Photos</div>
                             <div class="media">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Moroccan%20mint%20tea.jpg"
-                                    alt="Tea 1" loading="lazy">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mint%20tea%20(14823416550).jpg"
-                                    alt="Tea 2" loading="lazy">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Moroccan_mint_tea.jpg/800px-Moroccan_mint_tea.jpg"
+                                    alt="🍵 Moroccan Mint Tea photo 1" loading="lazy" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Mint_tea_%2814823416550%29.jpg/800px-Mint_tea_%2814823416550%29.jpg"
+                                    alt="🍵 Moroccan Mint Tea photo 2" loading="lazy" />
                             </div>
                         </div>
                     </div>
                 </article>
 
-                <!-- Harcha -->
-                <article class="card" id="harcha">
+                <article class="card fg-card" id="orange">
                     <div class="card-inner">
                         <div class="kicker">
-                            <h2 class="title">🫓 Harcha (Semolina Bread)</h2>
+                            <h2 class="title">🍊 Fresh Orange Juice (Jemaa el‑Fna)</h2>
                             <div class="pills">
                                 <span class="pill">Photos ×2</span>
                                 <span class="pill">Prices in MAD & €</span>
                             </div>
                         </div>
-                        <p class="desc">Semolina ‘pan bread’ — soft inside, slightly crispy outside. Great with honey or
-                            cheese.</p>
-                        <div class="section">
-                            <div class="label">Price (typical)</div>
-                            <div class="price-box">
-                                <div class="price-tag"><strong>5–15 MAD</strong> (≈ 0.5–1.5 €)</div>
-                            </div>
-                        </div>
-                        <div class="section">
-                            <div class="label">Recommended places</div>
-                            <div class="places">
-                                <div class="place">
-                                    <span>Traditional bakeries in Medina</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Bakery+Medina+Marrakech"
-                                        target="_blank" rel="noopener">📍 Maps</a>
-                                </div>
-                                <div class="place">
-                                    <span>Local breakfast cafés</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Breakfast+cafe+Gueliz+Marrakech"
-                                        target="_blank" rel="noopener">📍 Maps</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section">
-                            <div class="label">Photos</div>
-                            <div class="media">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Harcha%20(Homemade).jpg"
-                                    alt="Harcha 1" loading="lazy">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ary-7ercha.JPG"
-                                    alt="Harcha 2" loading="lazy">
-                            </div>
-                        </div>
-                    </div>
-                </article>
+                        <p class="desc">Freshly squeezed orange juice — cheap, refreshing, and iconic in Marrakech.</p>
 
-                <!-- Kefta Sandwich -->
-                <article class="card" id="sandwich">
-                    <div class="card-inner">
-                        <div class="kicker">
-                            <h2 class="title">🥪 Moroccan Sandwich (Kefta)</h2>
-                            <div class="pills">
-                                <span class="pill">Photos ×2</span>
-                                <span class="pill">Prices in MAD & €</span>
-                            </div>
-                        </div>
-                        <p class="desc">Grilled ground meat (kefta) in fresh bread with salad and spices — the ultimate
-                            street food lunch.</p>
                         <div class="section">
                             <div class="label">Price (typical)</div>
-                            <div class="price-box">
-                                <div class="price-tag"><strong>20–40 MAD</strong> (≈ 2–4 €)</div>
-                            </div>
+                            <p class="price">• 4–10 MAD (≈ 0.4–1 €)</p>
                         </div>
-                        <div class="section">
-                            <div class="label">Recommended places</div>
-                            <div class="places">
-                                <div class="place">
-                                    <span>Street stalls in Jemaa el‑Fna at night</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Kefta+sandwich+stall+Marrakech"
-                                        target="_blank" rel="noopener">📍 Maps</a>
-                                </div>
-                                <div class="place">
-                                    <span>Local snack shops in Gueliz</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Snack+shop+Marrakech"
-                                        target="_blank" rel="noopener">📍 Maps</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section">
-                            <div class="label">Photos</div>
-                            <div class="media">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Moroccan%20sandwich.jpg"
-                                    alt="Sandwich 1" loading="lazy">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kefta%20brochete.jpg"
-                                    alt="Sandwich 2" loading="lazy">
-                            </div>
-                        </div>
-                    </div>
-                </article>
 
-                <!-- Sfenj -->
-                <article class="card" id="sfenj">
-                    <div class="card-inner">
-                        <div class="kicker">
-                            <h2 class="title">🍩 Sfenj (Moroccan Donut)</h2>
-                            <div class="pills">
-                                <span class="pill">Photos ×2</span>
-                                <span class="pill">Prices in MAD & €</span>
-                            </div>
-                        </div>
-                        <p class="desc">Deep‑fried Moroccan donuts — best eaten piping hot with a sprinkle of sugar or
-                            plain with tea.</p>
-                        <div class="section">
-                            <div class="label">Price (typical)</div>
-                            <div class="price-box">
-                                <div class="price-tag"><strong>2–5 MAD</strong> (≈ 0.2–0.5 €)</div>
-                            </div>
-                        </div>
                         <div class="section">
                             <div class="label">Recommended places</div>
                             <div class="places">
-                                <div class="place">
-                                    <span>Deep‑fry stalls in the Medina</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Sfenj+stall+Medina+Marrakech"
-                                        target="_blank" rel="noopener">📍 Maps</a>
-                                </div>
-                                <div class="place">
-                                    <span>Morning street vendors</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Street+food+Marrakech"
-                                        target="_blank" rel="noopener">📍 Maps</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section">
-                            <div class="label">Photos</div>
-                            <div class="media">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sfenj-Moroccan_donuts.jpg"
-                                    alt="Sfenj 1" loading="lazy">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sfenj%20in%20Morocco.jpg"
-                                    alt="Sfenj 2" loading="lazy">
-                            </div>
-                        </div>
-                    </div>
-                </article>
 
-                <!-- Orange Juice -->
-                <article class="card" id="orange">
-                    <div class="card-inner">
-                        <div class="kicker">
-                            <h2 class="title">🍊 Fresh Orange Juice</h2>
-                            <div class="pills">
-                                <span class="pill">Photos ×2</span>
-                                <span class="pill">Prices in MAD & €</span>
-                            </div>
-                        </div>
-                        <p class="desc">Freshly squeezed juice — cheap, refreshing, and iconic in Jemaa el‑Fna.</p>
-                        <div class="section">
-                            <div class="label">Price (typical)</div>
-                            <div class="price-box">
-                                <div class="price-tag"><strong>4–10 MAD</strong> (≈ 0.4–1 €)</div>
-                            </div>
-                        </div>
-                        <div class="section">
-                            <div class="label">Recommended places</div>
-                            <div class="places">
                                 <div class="place">
                                     <span>Juice stalls in Jemaa el‑Fna</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Jemaa+el+Fna+orange+juice"
-                                        target="_blank" rel="noopener">📍 Maps</a>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Jemaa+el+Fna+orange+juice"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
                                 </div>
+
                                 <div class="place">
                                     <span>Jemaa el‑Fna square</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Jemaa+el+Fna"
-                                        target="_blank" rel="noopener">📍 Maps</a>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Jemaa+el+Fna"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
+
                         <div class="section">
                             <div class="label">Photos</div>
                             <div class="media">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Orange%20Juice%20Sellers%20in%20Djermaa%20el-Fna%20(Central%20Square)%20-%20Medina%20(Old%20City)%20-%20Marrakesh%20-%20Morocco.jpg"
-                                    alt="Juice 1" loading="lazy">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/120402-F-NI989-158%20(Marrakech).jpg"
-                                    alt="Juice 2" loading="lazy">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Orange_Juice_Sellers_in_Djermaa_el-Fna_%28Central_Square%29_-_Medina_%28Old_City%29_-_Marrakesh_-_Morocco.jpg/800px-Orange_Juice_Sellers_in_Djermaa_el-Fna_%28Central_Square%29_-_Medina_%28Old_City%29_-_Marrakesh_-_Morocco.jpg"
+                                    alt="🍊 Fresh Orange Juice (Jemaa el‑Fna) photo 1" loading="lazy" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/120402-F-NI989-158_%28Marrakech%29.jpg/800px-120402-F-NI989-158_%28Marrakech%29.jpg"
+                                    alt="🍊 Fresh Orange Juice (Jemaa el‑Fna) photo 2" loading="lazy" />
                             </div>
                         </div>
                     </div>
                 </article>
 
-                <!-- Coffee -->
-                <article class="card" id="coffee">
+                <article class="card fg-card" id="coffee">
                     <div class="card-inner">
                         <div class="kicker">
                             <h2 class="title">☕ Coffee (Morocco)</h2>
@@ -672,47 +747,56 @@
                                 <span class="pill">Prices in MAD & €</span>
                             </div>
                         </div>
-                        <p class="desc">Espresso or ‘nous‑nous’ — the perfect mid‑day break in the Medina.</p>
+                        <p class="desc">Espresso, ‘nous‑nous’ (half milk/half espresso), or sand‑brewed coffee — perfect
+                            mid‑day break.</p>
+
                         <div class="section">
                             <div class="label">Price (typical)</div>
-                            <div class="price-box">
-                                <div class="price-tag"><strong>8–20 MAD</strong> (≈ 0.8–2 €)</div>
-                            </div>
+                            <p class="price">• 8–20 MAD (≈ 0.8–2 €)</p>
                         </div>
+
                         <div class="section">
                             <div class="label">Recommended places</div>
                             <div class="places">
+
                                 <div class="place">
                                     <span>Café des Épices – Marrakech</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Cafe+des+Epices+Marrakech"
-                                        target="_blank" rel="noopener">📍 Maps</a>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Cafe+des+Epices+Marrakech"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
                                 </div>
+
                                 <div class="place">
                                     <span>Cafés in Gueliz</span>
-                                    <a class="btn-maps"
-                                        href="https://www.google.com/maps/search/?api=1&amp;query=Cafe+Gueliz+Marrakech"
-                                        target="_blank" rel="noopener">📍 Maps</a>
+                                    <div class="actions">
+                                        <a class="btn green"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Cafe+Gueliz+Marrakech"
+                                            target="_blank" rel="noopener">📍 Open Maps</a>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
+
                         <div class="section">
                             <div class="label">Photos</div>
                             <div class="media">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Coffee%20made%20in%20hot%20sand%20in%20Marrakech%202.jpg"
-                                    alt="Coffee 1" loading="lazy">
-                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Arguana.jpg"
-                                    alt="Coffee 2" loading="lazy">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Coffee_made_in_hot_sand_in_Marrakech_2.jpg/800px-Coffee_made_in_hot_sand_in_Marrakech_2.jpg"
+                                    alt="☕ Coffee (Morocco) photo 1" loading="lazy" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Arguana.jpg/800px-Arguana.jpg"
+                                    alt="☕ Coffee (Morocco) photo 2" loading="lazy" />
                             </div>
                         </div>
                     </div>
                 </article>
+
             </main>
 
-            <footer class="footer-note">
-                <p>Built for easy reading on mobile — Curated for you.</p>
-                <span class="copyright">© 2026 Tripuro Travel Guide</span>
-            </footer>
+            <div class="footer fg-footer-note">
+                Built for easy reading on mobile — Curated for you by Tripuro.
+            </div>
         </div>
     </div>
 
