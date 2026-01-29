@@ -486,6 +486,17 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     }
 
+    // Force scroll to top when returning from Food Guide
+    const backBtn = document.querySelector('.fg-floating-back');
+    if (backBtn) {
+        backBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
     // Refresh Button Logic
     const refreshBtn = document.getElementById('refresh-btn');
     if (refreshBtn) {
