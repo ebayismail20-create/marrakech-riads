@@ -219,6 +219,18 @@ const locations = {
     ],
     marrakech_dining: [
         {
+            id: 'food-guide-link',
+            name: 'Morocco Food & Drinks Guide',
+            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Moroccan_TAGINE.JPG/800px-Moroccan_TAGINE.JPG',
+            rating: 5,
+            price: { mad: 'Budget to Luxury', eur: 'Full Price Guide' },
+            bestTime: 'Essential Morocco Experience',
+            info: 'A complete guide to traditional Moroccan food, drinks, and prices.',
+            access: 'Click below to open the full interactive food guide.',
+            bookingUrl: '#food-guide',
+            badge: 'FULL GUIDE'
+        },
+        {
             id: 'safran-marrakech',
             name: 'Safran Marrakech',
             image: 'safran_marrakech.png',
